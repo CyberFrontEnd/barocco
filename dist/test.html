@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
+    <link href="css/fancybox.css" rel="stylesheet">
+
+    <script>
+
+    </script>
+</head>
+<body>
+
+<!--
+<div class="swiper mainCards">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="images/slider8.png">
+                        <img src="images/slider8.png" alt="" class="zoom_mw">
+                    </a>
+
+                    <a href="#" class="newSliderTop__heart"></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="images/slider7.png">
+                        <img src="images/slider7.png" alt="" class="zoom_mw">
+                    </a>
+
+                    <a href="#" class="newSliderTop__heart"></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="images/slider8.png">
+                        <img src="images/slider8.png" alt="" class="zoom_mw">
+                    </a>
+
+                    <a href="#" class="newSliderTop__heart"></a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery" href="images/slider7.png">
+                        <img src="images/slider7.png" alt="" class="zoom_mw">
+                    </a>
+
+                    <a href="#" class="newSliderTop__heart"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper mainCardsNav">
+            <div class="swiper-button-next8"></div>
+            <div class="swiper-button-prev8"></div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="mainCardsNavContent">
+                        <img src="images/sliderMin.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="mainCardsNavContent">
+                        <img src="images/sliderMin2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="mainCardsNavContent">
+                        <img src="images/sliderMin.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="mainCardsNavContent">
+                        <img src="images/sliderMin2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+-->
+
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/jquery.elevatezoom.js"></script>
+<script src="js/fancybox.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      nextArrow: '',
+      prevArrow: '',
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      arrows: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      infinite: true,
+      centerMode: false,
+      focusOnSelect: true,
+      vertical: true,
+      swipe: true,
+      nextArrow: '<div class="arrow-right"></div>',
+      prevArrow: '<div class="arrow-left""></div>',
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 4,
+            vertical: false,
+          }
+        }
+      ]
+    });
+    if ($('.slick-slide[data-val]').length) {
+      $('.gallary-slider .arrow-left').hide();
+      $('.gallary-slider .arrow-right').hide();
+    }
+
+    $('.slider-nav').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      console.log('xxxx');
+      $('.zoomContainer').remove();
+      $(".slick-active .elevatezoom-gallery").elevateZoom({
+        cursor: 'pointer',
+        galleryActiveClass: "active",
+        imageCrossfade: true,
+        loadingIcon: ""
+      });
+      var val = $('.slick-slide').eq(nextSlide).data('val');
+
+      try {
+        player.pause();
+      } catch (e) {
+      }
+      if (val) {
+        $('.gallary-slider .arrow-left').hide();
+        $('.gallary-slider .arrow-right').hide();
+        if (val == 'video') {
+          player.play();
+        }
+      } else {
+        $('.gallary-slider .arrow-left').show();
+        $('.gallary-slider .arrow-right').show();
+      }
+    });
+    $(document).on('click', '.slider-nav .slick-slide', function () {
+      setTimeout(function () {
+        $('.zoomContainer').remove();
+        $(".slick-active .elevatezoom-gallery").elevateZoom({
+          cursor: 'pointer',
+          galleryActiveClass: "active",
+          imageCrossfade: true,
+          loadingIcon: ""
+        });
+      }, 200);
+    });
+    $(".slick-active .elevatezoom-gallery").elevateZoom({
+      cursor: 'pointer',
+      galleryActiveClass: "active",
+      imageCrossfade: true,
+      loadingIcon: ""
+    });
+
+
+    /*
+    $('.variable-width').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });*/
+  });
+
+</script>
+</body>
+</html>

@@ -1,26 +1,917 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content=" " name="description">
-  <meta content=" " name="keywords">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content=" " name="description">
+    <meta content=" " name="keywords">
 
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/tel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <link href="css/swipe.css" rel="stylesheet">
 
-  <title>  </title>
+    <title> Barocco | Главная </title>
 </head>
 <body>
 
+<!--Start header-->
+<header class="header">
+    <div class="headerTop flex">
+        <button type="button" class="mobilBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-<input placeholder="Ваш телефон*" required type="text" id="phone" class="phone_mask">
+        <ul class="lang flex">
+            <li>
+                <a href="#">EN</a>
+            </li>
+
+            <li>
+                <span> | </span>
+            </li>
+
+            <li>
+                <a href="#">РУС</a>
+            </li>
+        </ul>
+
+        <a href="#" class="logo">
+            <img src="images/logo.svg" alt="">
+            <img src="images/logo2.svg" alt="" class="logoFix">
+        </a>
+
+        <ul class="social flex">
+            <li>
+                <a href="">
+                    <img src="images/heart2.svg" alt="">
+                    <img src="images/heart3.svg" alt="" class="socialFix">
+
+                    <span class="social__text"> Избранное </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social__search">
+                    <img src="images/search.svg" alt="">
+                    <img src="images/search2.svg" alt="" class="socialFix">
+                    <span class="social__text"> Поиск </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="images/story.svg" alt="">
+                    <img src="images/story2.svg" alt="" class="socialFix">
+                    <span class="social__text"> Корзина </span>
+                    <span class="social__num">33</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="images/usa.svg" alt="">
+                    <img src="images/usa2.svg" alt="" class="socialFix">
+                    <span class="social__text"> Кабинет </span>
+                </a>
+            </li>
+        </ul>
+
+        <form action="" class="searchHeader">
+            <input placeholder="Поиск по сайту..." type="text">
+            <button type="submit" class="searchHeader__lupa"></button>
+        </form>
+    </div>
+
+    <div class="headerIn">
+        <div class="headerDesc">Онлайн-магазин женской обуви</div>
+
+        <ul class="menu flex">
+            <li>
+                <a href="#">ЖЕНСКАЯ ОБУВЬ</a>
+            </li>
+
+            <li>
+                <a href="#">СУМКИ</a>
+            </li>
+
+            <li>
+                <a href="#">SALE</a>
+            </li>
+
+            <li>
+                <a href="#">НОВОСТИ</a>
+            </li>
+
+            <li>
+                <a href="#">СТАТЬИ О СТИЛЕ</a>
+            </li>
+
+            <li>
+                <a href="#">ДОСТАВКА И ОПЛАТА</a>
+            </li>
+
+            <li>
+                <a href="#">КОНТАКТЫ</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="headerFixDesc">Онлайн-магазин женской обуви</div>
+
+    <div class="mobilContent">
+        <ul class="lang flex">
+            <li>
+                <a href="#">EN</a>
+            </li>
+
+            <li>
+                <span> | </span>
+            </li>
+
+            <li>
+                <a href="#">РУС</a>
+            </li>
+        </ul>
+
+        <ul class="menu flex">
+            <li>
+                <a href="#">ЖЕНСКАЯ ОБУВЬ</a>
+            </li>
+
+            <li>
+                <a href="#">СУМКИ</a>
+            </li>
+
+            <li>
+                <a href="#">SALE</a>
+            </li>
+
+            <li>
+                <a href="#">НОВОСТИ</a>
+            </li>
+
+            <li>
+                <a href="#">СТАТЬИ О СТИЛЕ</a>
+            </li>
+
+            <li>
+                <a href="#">ДОСТАВКА И ОПЛАТА</a>
+            </li>
+
+            <li>
+                <a href="#">КОНТАКТЫ</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--End header-->
+
+<!--Start topSlider-->
+<section class="topSlider">
+    <div class="swiper topSliderSwipe">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video autoplay muted loop>
+                    <source src="video/slider.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="swiper-slide">
+                <video autoplay muted loop>
+                    <source src="video/slider.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="swiper-slide">
+                <video autoplay muted loop>
+                    <source src="video/slider.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="swiper-slide">
+                <video autoplay muted loop>
+                    <source src="video/slider.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="swiper-slide">
+                <video autoplay muted loop>
+                    <source src="video/slider.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!--End  topSlider-->
+
+<!--Start catalog-->
+<section class="catalog flex">
+    <a href="#" class="catalog__href wow fadeInLeft" data-wow-offset="200" data-wow-duration=".8s">
+        <img src="images/catalog.jpg" alt="">
+    </a>
+
+    <a href="#" class="catalog__href wow fadeInRight" data-wow-offset="200" data-wow-duration=".8s">
+        <img src="images/catalog2.jpg" alt="">
+    </a>
+
+    <div class="catalogDate">
+        <span class="catalogDate__title">2022</span>
+    </div>
+</section>
+<!--End catalog-->
+
+<!--Start new-->
+<section class="new wow fadeIn" data-wow-offset="300" data-wow-duration="1.5s">
+    <div class="newIn">
+        <h2 class="new__title">НОВИНКИ</h2>
+    </div>
+
+    <div class="navSwipe">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="newSlider">
+                    <div class="newSliderTop">
+                        <a href="#" class="newSliderTop__heart">
+
+                        </a>
+
+                        <div class="newSliderTop__sale">
+                            <div class="newSliderTop__title">sale</div>
+                            <div class="newSliderTop__procent">10%</div>
+                        </div>
+                    </div>
+
+                    <div class="newSliderBody">
+                        <a href="#" class="newSliderBody__href">
+                            <img src="images/item.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="newSliderPrice flex">
+                        <div class="newSliderPrice__sale">10 500 ₽</div>
+                        <div class="newSliderPrice__price">9 450 ₽</div>
+                    </div>
+
+                    <a href="#" class="newSliderPrice__btn flex">
+                        <span>Купить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="newSlider">
+                    <div class="newSliderTop">
+                        <a href="#" class="newSliderTop__heart"></a>
+                    </div>
+
+                    <div class="newSliderBody">
+                        <a href="#" class="newSliderBody__href">
+                            <img src="images/item2.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="newSliderPrice flex">
+                        <div class="newSliderPrice__price">9 500 ₽</div>
+                    </div>
+
+                    <a href="#" class="newSliderPrice__btn flex">
+                        <span>Купить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="newSlider">
+                    <div class="newSliderTop">
+                        <a href="#" class="newSliderTop__heart"></a>
+                    </div>
+
+                    <div class="newSliderBody">
+                        <a href="#" class="newSliderBody__href">
+                            <img src="images/item3.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="newSliderPrice flex">
+                        <div class="newSliderPrice__price">9 500 ₽</div>
+                    </div>
+
+                    <a href="#" class="newSliderPrice__btn flex">
+                        <span>Купить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="newSlider">
+                    <div class="newSliderTop">
+                        <a href="#" class="newSliderTop__heart"></a>
+
+                        <div class="newSliderTop__sale">
+                            <div class="newSliderTop__title">sale</div>
+                            <div class="newSliderTop__procent">10%</div>
+                        </div>
+                    </div>
+
+                    <div class="newSliderBody">
+                        <a href="#" class="newSliderBody__href">
+                            <img src="images/item.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="newSliderPrice flex">
+                        <div class="newSliderPrice__sale">10 500 ₽</div>
+                        <div class="newSliderPrice__price">9 450 ₽</div>
+                    </div>
+
+                    <a href="#" class="newSliderPrice__btn flex">
+                        <span>Купить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="newSlider">
+                    <div class="newSliderTop">
+                        <a href="#" class="newSliderTop__heart"></a>
+                    </div>
+
+                    <div class="newSliderBody">
+                        <a href="#" class="newSliderBody__href">
+                            <img src="images/item2.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="newSliderPrice flex">
+                        <div class="newSliderPrice__price">9 500 ₽</div>
+                    </div>
+
+                    <a href="#" class="newSliderPrice__btn flex">
+                        <span>Купить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="newSlider">
+                    <div class="newSliderTop">
+                        <a href="#" class="newSliderTop__heart"></a>
+                    </div>
+
+                    <div class="newSliderBody">
+                        <a href="#" class="newSliderBody__href">
+                            <img src="images/item3.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="newSliderPrice flex">
+                        <div class="newSliderPrice__price">9 500 ₽</div>
+                    </div>
+
+                    <a href="#" class="newSliderPrice__btn flex">
+                        <span>Купить</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End new-->
+
+<!--Start xit-->
+<section class="xit wow fadeIn" data-wow-offset="300" data-wow-duration="1.5s">
+    <img src="images/xit.jpg" alt="">
+
+    <h2 class="xit__title">хиты</h2>
+</section>
+<!--End xit-->
+
+<!--Start xitBlock-->
+<section class="mainXit">
+    <div class="xitBlock wow fadeIn" data-wow-offset="300" data-wow-duration="1.5s">
+        <div class="navSwipe2 flex">
+            <div class="swiper-button-next2"></div>
+            <div class="swiper-button-prev2"></div>
+        </div>
+
+        <div class="swiper xitSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="newSlider">
+                        <div class="newSliderTop">
+                            <a href="#" class="newSliderTop__heart"></a>
+                        </div>
+
+                        <div class="newSliderBody">
+                            <a href="#" class="newSliderBody__href">
+                                <img src="images/item4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="newSliderPrice flex">
+                            <div class="newSliderPrice__price">9 450 ₽</div>
+                        </div>
+
+                        <a href="#" class="newSliderPrice__btn flex">
+                            <span>Купить</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newSlider">
+                        <div class="newSliderTop">
+                            <a href="#" class="newSliderTop__heart"></a>
+                        </div>
+
+                        <div class="newSliderBody">
+                            <a href="#" class="newSliderBody__href">
+                                <img src="images/item5.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="newSliderPrice flex">
+                            <div class="newSliderPrice__price">9 450 ₽</div>
+                        </div>
+
+                        <a href="#" class="newSliderPrice__btn flex">
+                            <span>Купить</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newSlider">
+                        <div class="newSliderTop">
+                            <a href="#" class="newSliderTop__heart"></a>
+                        </div>
+
+                        <div class="newSliderBody">
+                            <a href="#" class="newSliderBody__href">
+                                <img src="images/item6.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="newSliderPrice flex">
+                            <div class="newSliderPrice__price">9 450 ₽</div>
+                        </div>
+
+                        <a href="#" class="newSliderPrice__btn flex">
+                            <span>Купить</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newSlider">
+                        <div class="newSliderTop">
+                            <a href="#" class="newSliderTop__heart"></a>
+                        </div>
+
+                        <div class="newSliderBody">
+                            <a href="#" class="newSliderBody__href">
+                                <img src="images/item4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="newSliderPrice flex">
+                            <div class="newSliderPrice__price">9 450 ₽</div>
+                        </div>
+
+                        <a href="#" class="newSliderPrice__btn flex">
+                            <span>Купить</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newSlider">
+                        <div class="newSliderTop">
+                            <a href="#" class="newSliderTop__heart"></a>
+                        </div>
+
+                        <div class="newSliderBody">
+                            <a href="#" class="newSliderBody__href">
+                                <img src="images/item5.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="newSliderPrice flex">
+                            <div class="newSliderPrice__price">9 450 ₽</div>
+                        </div>
+
+                        <a href="#" class="newSliderPrice__btn flex">
+                            <span>Купить</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newSlider">
+                        <div class="newSliderTop">
+                            <a href="#" class="newSliderTop__heart"></a>
+                        </div>
+
+                        <div class="newSliderBody">
+                            <a href="#" class="newSliderBody__href">
+                                <img src="images/item6.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="newSliderPrice flex">
+                            <div class="newSliderPrice__price">9 450 ₽</div>
+                        </div>
+
+                        <a href="#" class="newSliderPrice__btn flex">
+                            <span>Купить</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="xitSale">
+            <img src="images/img.jpg" alt="" class="wow fadeInLeft" data-wow-offset="300" data-wow-duration=".8s">
+            <img src="images/xitSaleMobil.jpg" alt="" class="wow fadeInLeft xitSaleMobil" data-wow-offset="300"
+                 data-wow-duration=".8s">
+
+            <div class="xitSliderBlock flex wow fadeInRight" data-wow-offset="300" data-wow-duration=".8s">
+                <div class="xitSliderBlockIn flex">
+                    <div class="xitSliderBlock__text">
+                        <h2 class="xitSliderBlock__title">sale</h2>
+                        <div class="xitSliderBlock__desc">Товары со скидкой</div>
+                    </div>
+
+                    <div class="navSwipe3">
+                        <div class="swiper-button-next3"></div>
+                        <div class="swiper-button-prev3"></div>
+                    </div>
+                    <div class="swiper xitSliderOne">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="newSlider">
+                                    <div class="newSliderTop">
+                                        <a href="#" class="newSliderTop__heart"></a>
+
+                                        <div class="newSliderTop__sale">
+                                            <div class="newSliderTop__title">sale</div>
+                                            <div class="newSliderTop__procent">10%</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="newSliderBody">
+                                        <a href="#" class="newSliderBody__href">
+                                            <img src="images/item7.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="newSliderPrice flex">
+                                        <div class="newSliderPrice__price">9 450 ₽</div>
+                                    </div>
+
+                                    <a href="#" class="newSliderPrice__btn flex">
+                                        <span>Купить</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="newSlider">
+                                    <div class="newSliderTop">
+                                        <a href="#" class="newSliderTop__heart"></a>
+
+                                        <div class="newSliderTop__sale">
+                                            <div class="newSliderTop__title">sale</div>
+                                            <div class="newSliderTop__procent">10%</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="newSliderBody">
+                                        <a href="#" class="newSliderBody__href">
+                                            <img src="images/item7.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="newSliderPrice flex">
+                                        <div class="newSliderPrice__price">9 450 ₽</div>
+                                    </div>
+
+                                    <a href="#" class="newSliderPrice__btn flex">
+                                        <span>Купить</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="newSlider">
+                                    <div class="newSliderTop">
+                                        <a href="#" class="newSliderTop__heart"></a>
+
+                                        <div class="newSliderTop__sale">
+                                            <div class="newSliderTop__title">sale</div>
+                                            <div class="newSliderTop__procent">10%</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="newSliderBody">
+                                        <a href="#" class="newSliderBody__href">
+                                            <img src="images/item7.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="newSliderPrice flex">
+                                        <div class="newSliderPrice__price">9 450 ₽</div>
+                                    </div>
+
+                                    <a href="#" class="newSliderPrice__btn flex">
+                                        <span>Купить</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End xitBlock-->
+
+<!--Start instoSlider-->
+<section class="instoSlider">
+    <div class="instoSliderIn">
+        <div class="navSwipe9">
+            <div class="swiper-button-next9"></div>
+            <div class="swiper-button-prev9"></div>
+        </div>
+
+        <div class="swiper instoSliderBlock">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/ins.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/ins2.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/ins3.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/ins4.jpg" alt="">
+                    </a>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/ins.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/ins2.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/ins3.png" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/ins4.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <img src="images/iphone.png" alt="" class="instoSlider__img wow fadeInUp" data-wow-offset="300"
+         data-wow-duration=".8s">
+</section>
+<!--End instoSlider-->
+
+<!--Start service-->
+<section class="service">
+    <ul class="serviceList flex">
+        <li class="wow fadeInUp" data-wow-offset="300" data-wow-duration=".5s">
+            <img src="images/purchases.svg" alt="">
+            <div class="serviceList__text">Оплачивайте покупки онлайн сразу на сайте</div>
+        </li>
+
+        <li class="wow fadeInUp" data-wow-offset="300" data-wow-duration=".8s">
+            <img src="images/deliveer.svg" alt="">
+            <div class="serviceList__text">Доставка возможна как по России так и по всему миру</div>
+        </li>
+
+        <li class="wow fadeInUp" data-wow-offset="300" data-wow-duration="1.3s">
+            <img src="images/star.svg" alt="">
+            <div class="serviceList__text">Защита ваших покупок и гарантия качества</div>
+        </li>
+
+        <li class="wow fadeInUp" data-wow-offset="300" data-wow-duration="1.5s">
+            <img src="images/24.svg" alt="">
+            <div class="serviceList__text">Свяжитесь с нами, если у вас возникли вопросы: +7(961)582-81-14</div>
+        </li>
+    </ul>
+</section>
+<!--End service-->
+
+<!--Start barocco-->
+<section class="barocco flex wow fadeIn" data-wow-offset="300" data-wow-duration="1.2s">
+    <div class="baroccoIn flex">
+        <div class="barocco__title">Добро пожаловать в</div>
+        <img src="images/barocco.svg" alt="" class="barocco__img">
+        <div class="barocco__title">– мир эксклюзивной обуви и аксессуаров для женщин.</div>
+    </div>
+</section>
+<!--End barocco-->
+
+<!--Start about-->
+<section class="about">
+    <div class="aboutIn">
+        <h2 class="title">О НАС</h2>
+        <p class="about__paragraf wow fadeInUp" data-wow-offset="300" data-wow-duration=".5s">Нашему бренду более 4 лет,
+            мы уже успели завоевать сердца многих женщин как в
+            России, в ближнем
+            зарубежье, так и по всему миру. Концепция нашего бренда – это ЛЮБОВЬ. Любовь к женской красоте,
+            сексуальности и энергии, которую мы с удовольствием подчеркиваем с помощью наших непревзойденных моделей
+            обуви. С нами вы не только подчеркнете Ваш образ, но и произведете неизгладимое впечатление при вашем
+            появлении в обществе.</p>
+
+        <p class="about__paragraf wow fadeInUp" data-wow-offset="300" data-wow-duration=".9s">«Barocco Exclusive» –
+            это безупречное качество, современный дизайн, натуральные
+            материалы и огромное
+            разнообразие колодок. Мы постоянно совершенсвуем наш модельный ряд, учитывая все современные тенденции и
+            пожелания наших покупателей. У нас вы можете найти модель обуви для любого случая, будь это торжественное
+            мероприятие или для повседневной носки.</p>
+    </div>
+
+    <div class="aboutMap wow fadeIn" data-wow-offset="300" data-wow-duration=".8s">
+        <img src="images/aboutMap.png" alt="">
+    </div>
+
+    <div class="aboutIn">
+        <p class="about__paragraf wow fadeInUp" data-wow-offset="300" data-wow-duration=".9s">Удобная и стильная обувь
+            «Barocco Exclusive» завоевала сердца российских
+            покупателей.
+            Секрет прост – эта обувь любима за стиль, высокое качество и доступную цену. Вы всегда можете купить обувь
+            «Barocco Exclusive» в интернет-магазине.</p>
+
+        <div class="aboutHide">
+            <p class="about__paragraf wow fadeInUp" data-wow-offset="300" data-wow-duration=".9s">Туфли из натуральной
+                кожи или замши, элегантные ботильоны, замшевые ботфорты –
+                все они представлены в
+                нашем каталоге. И уже доступна новая коллекция! В новой линии преобладают черный, бежевый, коричневый и
+                серый цвета, которые, как известно, всегда актуальны.
+                Во время распродажи сможете купить понравившуюся пару со скидкой, размер которой вас приятно порадует.
+                Закажите обувь «Barocco Exclusive» в интернет магазине – и ваша походка всегда будет летящей.</p>
+
+            <p class="about__paragraf wow fadeInUp" data-wow-offset="300" data-wow-duration=".9s">Туфли из натуральной
+                кожи или замши, элегантные ботильоны, замшевые ботфорты –
+                все они представлены в
+                нашем каталоге. И уже доступна новая коллекция! В новой линии преобладают черный, бежевый, коричневый и
+                серый цвета, которые, как известно, всегда актуальны.
+                Во время распродажи сможете купить понравившуюся пару со скидкой, размер которой вас приятно порадует.
+                Закажите обувь «Barocco Exclusive» в интернет магазине – и ваша походка всегда будет летящей.</p>
+
+            <p class="about__paragraf wow fadeInUp" data-wow-offset="300" data-wow-duration=".9s">Туфли из натуральной
+                кожи или замши, элегантные ботильоны, замшевые ботфорты –
+                все они представлены в
+                нашем каталоге. И уже доступна новая коллекция! В новой линии преобладают черный, бежевый, коричневый и
+                серый цвета, которые, как известно, всегда актуальны.
+                Во время распродажи сможете купить понравившуюся пару со скидкой, размер которой вас приятно порадует.
+                Закажите обувь «Barocco Exclusive» в интернет магазине – и ваша походка всегда будет летящей.</p>
+        </div>
+
+        <a href="#" class="more">Подробнее</a>
+    </div>
+</section>
+<!--End about-->
+
+<!--Start footer-->
+<footer class="footer">
+    <a href="#" class="logoFooter">
+        <img src="images/logoFooter.svg" alt="">
+    </a>
+
+    <div class="footerIn flex">
+        <div class="footerLeft flex">
+            <ul class="footerMenu">
+                <li>
+                    <a href="#">Вакансии</a>
+                </li>
+
+                <li>
+                    <a href="">Уход за изделиями</a>
+                </li>
+
+                <li>
+                    <a href="#">Возврат товара</a>
+                </li>
+
+                <li>
+                    <a href="#">О компании</a>
+                </li>
+
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+
+                <li>
+                    <a href="#">Пользовательское соглашение</a>
+                </li>
+            </ul>
+
+            <div class="payment">
+                <div class="payment__title">Способы оплаты</div>
+                <ul class="payment__list">
+                    <li>
+                        <img src="images/mir.svg" alt="">
+                    </li>
+
+                    <li>
+                        <img src="images/master.png" alt="">
+                    </li>
+
+                    <li>
+                        <img src="images/visa.svg" alt="">
+                    </li>
+
+                    <li>
+                        <img src="images/fraction.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footerRight">
+            <a href="tel:+7 (961) 582-81-14" class="footerRight__href">+7 (961) 582-81-14</a>
+
+            <ul class="footerRight__social flex">
+                <li>
+                    <a href="">
+                        <img src="images/vk.svg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="images/telegram.svg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="images/instagram.svg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <span class="footerRight__title">Написать нам</span>
+                </li>
+            </ul>
+
+            <ul class="footerRight__work">
+                <li>
+                    <span>График работы</span>
+                </li>
+
+                <li>
+                    <span>Пн-Пт 9.00-18.00</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--End footer-->
+
+<a href="#" class="up">
+    <img src="images/up.svg" alt="">
+</a>
 
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/migrate.js"></script>
-<script src="js/tel.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/swip.js"></script>
+<script src="js/swipeNew.js"></script>
+<script src="js/swipeXit.js"></script>
+<script src="js/swipeXit2.js"></script>
+<script src="js/topSlider.js"></script>
+<script src="js/instoSliderBlock.js"></script>
+<script src="js/more.js"></script>
 <script src="js/script.js"></script>
-
 </body>
 </html>
