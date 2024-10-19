@@ -181,6 +181,7 @@ Start header
   color: #FFFFFF;
   font-size: 25px;
   margin-bottom: 40px;
+  padding-right: 94px;
 }
 
 .headerTop {
@@ -216,10 +217,15 @@ Start header
 }
 
 .social {
-  max-width: 190px;
+  max-width: 245px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+
+.social__num.bonus {
+  right: -18px;
+  top: -2px;
 }
 
 .logoFix {
@@ -468,13 +474,15 @@ Start topSlider
   width: 55px !important;
   border-radius: 0 !important;
   height: 4px !important;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8) !important;
   margin: 0 20px !important;
   cursor: pointer;
+  opacity: .6 !important;
 }
 
 .topSlider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #FFFFFF !important;
+  opacity: 1 !important;
 }
 
 
@@ -539,7 +547,7 @@ Start catalog
 
 .catalogDate__title {
   color: #FFFFFF;
-  font: italic bold 70px 'Futura Md BT', sans-serif;
+  font: normal bold 70px 'Evolventa', sans-serif;
 }
 
 /*#########
@@ -574,7 +582,7 @@ Start new
 .new__title {
   text-align: right;
   color: #DACEC3;
-  font: italic normal 24px 'Futura Bk', sans-serif;
+  font: normal normal 24px 'Evolventa', sans-serif;
   position: relative;
 }
 
@@ -604,6 +612,17 @@ Start new
   z-index: 100;
 }
 
+.slider-for .newSliderTop__heart {
+  top: 0;
+}
+
+.slider-for .slick-slide img {
+  margin: 0 auto;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
 .newSliderTop__heart_active {
   background: url('../images/heart4.svg') no-repeat;
 }
@@ -615,7 +634,7 @@ Start new
 
 .newSliderTop__title {
   color: #E0D4B3;
-  font: italic bold 30px 'Futura Md BT', sans-serif;
+  font: normal bold 30px 'Evolventa', sans-serif;
   text-align: center;
   text-transform: uppercase;
   line-height: 17px;
@@ -623,9 +642,9 @@ Start new
 
 .newSliderTop__procent {
   color: rgba(0, 0, 0, .4);
-  font-size: 25px;
   text-align: center;
   padding-top: 6px;
+  font: normal normal 25px 'Evolventa', sans-serif;
 }
 
 .newSliderTop__sale {
@@ -825,7 +844,7 @@ Start service
   color: #000;
   opacity: .4;
   text-align: center;
-  font: italic normal 20px 'Futura Bk', sans-serif;
+  font: normal normal 20px 'Futura Bk', sans-serif;
   padding-top: 18px;
 }
 
@@ -934,13 +953,13 @@ Start xitBlock
 .xitSliderBlock__title {
   text-transform: uppercase;
   color: #DACEC4;
-  font: italic bold 70px 'Futura Md BT', sans-serif;
+  font: normal bold 70px 'Evolventa', sans-serif;
   text-align: center;
 }
 
 .xitSliderBlock__desc {
   color: rgba(0, 0, 0, .3);
-  font: italic normal 24px 'Futura Bk', sans-serif;
+  font: normal normal 24px 'Futura Bk', sans-serif;
 }
 
 .navSwipe2 {
@@ -997,7 +1016,7 @@ Start xitBlock
 .xit__title {
   text-transform: uppercase;
   color: #FFFFFF;
-  font: italic bold 70px 'Futura Md BT', sans-serif;
+  font: normal bold 70px 'Evolventa', sans-serif;
   text-align: center;
   position: relative;
   padding-top: 50px;
@@ -1057,7 +1076,7 @@ Start about
 
 .title {
   color: #E0D4B3;
-  font: italic bold 70px 'Futura Md BT', sans-serif;
+  font: normal bold 70px 'Evolventa', sans-serif;
 }
 
 .about__paragraf {
@@ -1246,7 +1265,7 @@ Start footer
 
 .footerRight__title {
   color: #DACEC3;
-  font: italic normal 20px 'Futura Bk', sans-serif;
+  font: normal normal 20px 'Futura Bk', sans-serif;
 }
 
 .footerRight__work {
@@ -1366,7 +1385,7 @@ Start manager
 .managerBlock__month,
 .managerBlock__title {
   color: #FFFFFF;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   border-bottom: 1px solid #FFFFFF;
   padding-bottom: 10px;
   display: inline;
@@ -1530,7 +1549,7 @@ Start managerContent
 .popupForm__title {
   text-align: center;
   color: #000;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
 }
 
 .popupFormBlock {
@@ -1598,7 +1617,7 @@ Start managerContent
 
 .popupFormBlock__file {
   color: #000;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   text-align: center;
 }
 
@@ -1639,7 +1658,7 @@ Start managerContent
 }
 
 .managerSliderBlock__title {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   color: #000;
   border-bottom: 1px solid;
   display: inline-block;
@@ -1647,7 +1666,7 @@ Start managerContent
 }
 
 .managerSliderBlock__price {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   color: #000;
   margin-top: 20px;
 }
@@ -1818,7 +1837,7 @@ Start cabinet
 }
 
 .cabinetList li a {
-  font: italic bold 30px 'Futura Md BT', sans-serif;
+  font: normal bold 30px 'Futura Md BT', sans-serif;
   color: rgba(0, 0, 0, .4);
   -webkit-transition: all, 0.5s;
   -moz-transition: all, 0.5s;
@@ -1875,7 +1894,7 @@ Start cabinet
 
 .cabinetForm__title {
   color: #000;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -1906,7 +1925,7 @@ Start cabinet
 
 .item__num {
   color: #000;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
 }
 
 .order {
@@ -1984,16 +2003,15 @@ Start refund
   line-height: 30px;
   padding-bottom: 20px;
 }
-
 .refund__title {
   color: rgba(0, 0, 0, .4);
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   padding: 20px 0;
 }
 
 .refund__bold {
   color: rgba(0, 0, 0, .4);
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
 }
 
 /*########
@@ -2057,14 +2075,14 @@ Start deliver
 }
 
 .deliverItem__title {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   color: rgba(0, 0, 0, .4);
   margin-bottom: 20px;
 }
 
 .deliverItem__text a,
 .deliverItem__text b {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   color: rgba(0, 0, 0, .4);
 }
 
@@ -2268,7 +2286,7 @@ Start newsContent
 }
 
 .newsBottom__desc b {
-  font: italic bold 40px 'Futura Md BT', sans-serif;
+  font: normal bold 40px 'Futura Md BT', sans-serif;
   color: #FFFFFF;
 }
 
@@ -2358,7 +2376,7 @@ Start newsContent
 
 .newsContentBlock__desc2 span {
   color: rgba(224, 212, 179, 1);
-  font: italic bold 40px 'Futura Md BT', sans-serif;
+  font: normal bold 40px 'Futura Md BT', sans-serif;
 }
 
 
@@ -2388,7 +2406,7 @@ Start newsSlider
 }
 
 .newsSliderBlock .swiper-slide.swiper-slide-active img {
-  /*transform: scale(170%);*/
+  transform: scale(170%);
   box-shadow: 0 0 19px rgba(0, 0, 0, 0.5);
 }
 
@@ -2540,7 +2558,7 @@ Start styleContent
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 130px;
+  padding-top: 50px;
 }
 
 .styleCard {
@@ -2555,7 +2573,7 @@ Start styleContent
 }
 
 .styleCard__desc b {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
 }
 
 .styleCard__desc {
@@ -2589,7 +2607,7 @@ Start styleContent
 }
 
 .styleCardText__text b {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   color: rgba(0, 0, 0, .4);
 }
 
@@ -2602,7 +2620,7 @@ Start styleContent
 .manager__bold {
   text-align: center;
   color: #FFFFFF;
-  font: italic bold 30px 'Futura Md BT', sans-serif;
+  font: normal bold 30px 'Futura Md BT', sans-serif;
   max-width: 100%;
   width: 100%;
   display: block;
@@ -2636,7 +2654,7 @@ Start careContent
 
 .careLeft li a {
   color: rgba(0, 0, 0, 0.4);
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   display: inline-block;
 }
 
@@ -2663,7 +2681,7 @@ Start careContent
 }
 
 .careBlock__title {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   color: rgba(0, 0, 0, .4);
   padding-top: 40px;
 }
@@ -2784,18 +2802,18 @@ Start basket
   padding-bottom: 15px;
 }
 
-.basketRightBottom__colorСircle {
+.basketRightBottom__colorРЎircle {
   width: 31px;
   height: 31px;
   border-radius: 100px;
   margin-left: 20px;
 }
 
-.basketRightBottom__colorСircle.black {
+.basketRightBottom__colorРЎircle.black {
   background-color: #000000;
 }
 
-.basketRightBottom__colorСircle.white {
+.basketRightBottom__colorРЎircle.white {
   background-color: #FFFFFF;
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
@@ -3058,7 +3076,7 @@ Start makingOrder
 
 .makingOrderRadioLeft__title {
   color: #000;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
 }
 
 .makingOrderRadioLeft {
@@ -3134,7 +3152,7 @@ Start makingOrder
 
 .basketBlockOrder__title {
   color: #000;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   padding: 0 0 50px 100px;
 }
 
@@ -3191,7 +3209,7 @@ Start makingOrder
 }
 
 .total__price b {
-  font: italic bold 30px 'Futura Md BT', sans-serif;
+  font: normal bold 30px 'Futura Md BT', sans-serif;
   color: #FFFFFF;
 }
 
@@ -3264,7 +3282,7 @@ Start makingOrder
 
 .popupForm__num {
   text-align: center;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   max-width: 100%;
   width: 100%;
   margin-top: 10px;
@@ -3300,7 +3318,6 @@ Start cardContent
   width: 100%;
   justify-content: space-between;
   overflow: hidden;
-  flex-direction: row-reverse;
 }
 
 .cardRight {
@@ -3315,7 +3332,7 @@ Start cardContent
 }
 
 .cardRight__title span {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   color: #E0D4B3;
   padding-left: 20px;
 }
@@ -3338,10 +3355,15 @@ Start cardContent
   text-decoration: line-through;
 }
 
+.cardRightPrice__price2,
 .cardRightPrice__price {
   color: #000;
   font-size: 35px;
-  padding-left: 40px;
+}
+
+.cardRightPrice__price2 {
+  font-size: 30px;
+  margin-left: 10px;
 }
 
 .cardRight .basketRightBottom__color {
@@ -3350,11 +3372,11 @@ Start cardContent
   font-size: 30px;
 }
 
-.basketRightBottom__colorСircle.violet {
+.basketRightBottom__colorРЎircle.violet {
   background: #81198A;
 }
 
-.basketRightBottom__colorСircle.red {
+.basketRightBottom__colorРЎircle.red {
   background: #DF0303;
 }
 
@@ -3469,7 +3491,7 @@ Start cardSlider
   width: 100%;
   margin: 0 auto;
   color: #DACEC3;
-  font: italic bold 40px 'Futura Md BT', sans-serif;
+  font: normal bold 40px 'Evolventa', sans-serif;
   text-transform: uppercase;
 }
 
@@ -3505,7 +3527,7 @@ Start cardSlider
 }
 
 .cardSliderBlock .newSlider {
-  height: 530px;
+  height: 580px;
 }
 
 /*############
@@ -3521,7 +3543,6 @@ Start cardLeft
   margin: 0 !important;
   height: 495px;
   overflow: hidden;
-  z-index: 0 !important;
 }
 
 .mainCardsNav {
@@ -3531,7 +3552,6 @@ Start cardLeft
   padding: 5px 5px 24px !important;
   height: 500px;
   position: relative;
-  /*z-index: -9 !important;*/
 }
 
 .mainCardsNavContent {
@@ -3572,9 +3592,9 @@ Start cardLeft
 }
 
 .cardInfoList {
-  margin-top: 50px;
   max-width: 520px;
   width: 100%;
+  margin: 50px auto 0;
 }
 
 .cardInfoList li {
@@ -4173,24 +4193,16 @@ Start catalogPage
 }
 
 .zoomContainer {
-  /*width: 300px !important;*/
-  /*height: 300px !important;*/
-  /*z-index: 100000;*/
-}
-
-.cardLeft .swiper-wrapper {
-  z-index: 0;
-}
-
-.zoomLens {
-  /*display: block !important;*/
+  width: 300px !important;
+  height: 300px !important;
+  z-index: 100000;
 }
 
 .zoomContainer .zoomWindowContainer div,
 .zoomContainer .zoomWindowContainer {
-  /*width: 300px !important;*/
-  /*height: 300px !important;*/
-  /*z-index: 10000;*/
+  width: 500px !important;
+  height: 500px !important;
+  z-index: 10000;
 }
 
 .newsSliderBlock .newsContentBlock {
@@ -4258,7 +4270,7 @@ Start orderDescription
 }
 
 .orderDescription__title span {
-  font: italic bold 25px 'Futura Md BT', sans-serif;
+  font: normal bold 25px 'Futura Md BT', sans-serif;
   color: #ccbbab;
   padding: 0 5px;
 }
@@ -4274,7 +4286,7 @@ Start orderDescription
 }
 
 .orderDescriptionOrder__title {
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
   color: #222222;
   padding-bottom: 20px;
 }
@@ -4291,7 +4303,7 @@ Start orderDescription
 
 .orderDescriptionBottom__desc {
   color: #000;
-  font: italic bold 20px 'Futura Md BT', sans-serif;
+  font: normal bold 20px 'Futura Md BT', sans-serif;
 }
 
 .orderDescription__btn {
@@ -4315,7 +4327,7 @@ Start orderDescription
 }
 
 .warning {
-  font: italic bold 18px 'Futura Md BT', sans-serif;
+  font: normal bold 18px 'Futura Md BT', sans-serif;
   color: #000;
   display: block;
   padding: 20px 0 0;
@@ -4389,6 +4401,7 @@ End orderDescription
 
 .mobilContent .menu li {
   margin-bottom: 20px !important;
+  width: 100%;
 }
 
 .mobilContent .lang li span,
@@ -4478,7 +4491,7 @@ Start newsSearch
   width: 100%;
   margin: 0 auto;
   color: #E0D4B3;
-  font: italic bold 30px 'Futura Md BT', sans-serif;
+  font: normal bold 30px 'Futura Md BT', sans-serif;
   padding-bottom: 30px;
 }
 
@@ -4508,7 +4521,7 @@ Start newsSearch
 }
 
 .newsSearchItem__title span {
-  font: italic bold 30px 'Futura Md BT', sans-serif;
+  font: normal bold 30px 'Futura Md BT', sans-serif;
   color: #E0D4B3;
 }
 
@@ -4604,7 +4617,7 @@ Start newsSearch
 
 .dontSearch__text {
   color: rgba(0, 0, 0, .4);
-  font: italic 35px 'FuturaBookC', sans-serif;
+  font: normal 35px 'FuturaBookC', sans-serif;
   text-align: center;
   display: block;
 }
@@ -4687,14 +4700,27 @@ End newsSearch
   display: none;
 }
 
+/*
+font: normal bold  20px 'Futura Md BT', sans-serif;
+*/
+
+/*
+font: normal normal  20px 'Futura Bk', sans-serif;
+*/
+
+/*
+font: normal normal  20px 'Futura Bk BT', sans-serif;
+*/
 .filterRange {
   max-width: 100%;
   width: 100%;
 }
+
 .example-val {
   color: rgba(0, 0, 0, .9);
   font-size: 16px;
 }
+
 .noUi-horizontal .noUi-handle.noUi-handle-lower {
   right: -26px;
 }
@@ -4702,13 +4728,6 @@ End newsSearch
 .noUi-horizontal .noUi-handle.noUi-handle-upper {
   right: 0;
 }
-
-.multi-vertical {
-  overflow: hidden;
-  max-width: 500px;
-  width: 100%;
-}
-
 
 /*
 Start 14,02,2023
@@ -4735,17 +4754,183 @@ Start 14,02,2023
 }
 
 .zoomLens {
-  width: 100px !important;
-  height: 100px !important;
+  width: 250px !important;
+  height: 250px !important;
 }
 
 .slick-vertical .slick-slide {
   cursor: pointer;
 }
 
+.arrow-left.slick-arrow {
+  background: url(../images/arrowRight.svg) no-repeat center;
+  width: 62px;
+  height: 72px;
+  cursor: pointer;
+  margin: 0 auto;
+  transform: rotate(271deg);
+}
+
+.arrow-right.slick-arrow {
+  background: url(../images/arrowRight.svg) no-repeat center;
+  width: 62px;
+  height: 72px;
+  cursor: pointer;
+  margin: 0 auto;
+  transform: rotate(90deg);
+}
+
+.cardLeftSlider .slider-nav .slick-slide img {
+  width: 188px;
+  height: 218px;
+  object-fit: contain;
+}
+
+.menuIn {
+  background-color: #fff;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 34px;
+  margin-top: 20px;
+  display: none;
+}
+
+.menuInBlock {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.menuInBlock li {
+  max-width: 16.6%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.menuInBlock li a img {
+  display: block !important;
+  margin: 0 auto;
+}
+
+.menuInBlock li a span {
+  display: block;
+  color: #DACEC3;
+  font: normal normal 18px 'Futura Bk BT', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 15px 0 0;
+}
+
+.menuInBlock li a span.menuInBlock__img {
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.menuHover .menuIn {
+  display: none;
+}
+
+.menu li.menuHover {
+  padding-bottom: 30px;
+}
+
+.menu li.menuHover:hover .menuIn {
+  display: block;
+}
+
+.menuMobilHover:after {
+  content: "";
+  display: block;
+  background: url(../images/icon2.svg) no-repeat;
+  width: 20px;
+  height: 24px;
+  transform: rotate(181deg);
+  position: relative;
+  top: -2px;
+  left: 17px;
+}
+
+.header2, .header {
+  z-index: 900 !important;
+}
+
+.cardRightPriceRight {
+  max-width: 140px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.cardRightPriceRight__text{
+  max-width: 100px;
+  width: 100%;
+}
+
+.basketRightBottom__colorСircle {
+  width: 31px;
+  height: 31px;
+  border-radius: 100px;
+  margin-left: 18px;
+}
+
+.cardRightPay {
+  border: 1px solid #E6E6E6;
+  max-width: 245px;
+  width: 100%;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardRightPay__text {
+  position: relative;
+  color: #101c27;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardRightPay__text:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #AEB3BA;
+  border-top: none;
+  border-left: none;
+  transform: rotate(315deg);
+  margin-left: 5px;
+}
+
+.cardRightPay img {
+  margin: 0 5px 0 5px;
+}
+
 /*##############
 Start responsive
 ################*/
+@media (max-width: 1990px) {
+  .logo {
+    margin-left: 53px;
+  }
+}
+
 @media (max-width: 1780px) {
   .topSliderSwipe video, .topSliderSwipe img {
     height: 1000px;
@@ -4761,15 +4946,37 @@ Start responsive
   }
 }
 
+@media (max-width: 1600px) {
+  .logo {
+    margin-left: 75px;
+  }
+}
+
 @media (max-width: 1550px) {
   .topSlider .swiper-pagination {
     bottom: 70px !important;
   }
+
+  .header:before {
+    width: 36.5%;
+  }
 }
 
 @media (max-width: 1440px) {
+  .slider-for {
+    max-width: 429px;
+  }
+
+  .cardLeftSlider .slider-nav {
+    max-width: 150px;
+  }
+
   .catalog .catalog__href {
     height: 739px;
+  }
+
+  .menuInBlock {
+    max-width: 100%;
   }
 
   .totalIn,
@@ -4901,6 +5108,10 @@ Start responsive
 }
 
 @media (max-width: 1290px) {
+  .cardLeftSlider .slider-nav {
+    max-width: 120px;
+  }
+
   .contactsContent {
     height: 650px;
   }
@@ -5074,9 +5285,17 @@ Start responsive
   .newSliderBody .owl-carousel {
     height: 340px;
   }
+
+  .cardLeftSlider .slider-nav .slick-slide img {
+    height: 180px;
+  }
 }
 
 @media (max-width: 1140px) {
+  .logo {
+    margin-left: 60px;
+  }
+
   .basketRightTop__date {
     font-size: 20px;
   }
@@ -5148,7 +5367,7 @@ Start responsive
     max-width: 85px;
   }
 
-  .basketRightBottom__colorСircle {
+  .basketRightBottom__colorРЎircle {
     width: 21px;
     height: 21px;
   }
@@ -5185,7 +5404,7 @@ Start responsive
     max-width: 309px;
   }
 
-  .cardRight .basketRightBottom__colorСircle {
+  .cardRight .basketRightBottom__colorРЎircle {
     margin-top: 3px;
   }
 
@@ -5345,10 +5564,18 @@ Start responsive
   .catalogAside {
     max-width: 270px;
   }
+
+  .zoomContainer {
+    display: none !important;
+  }
+
+  .slider-for {
+    max-width: 351px;
+  }
 }
 
 @media (max-width: 1100px) {
-  .newsSliderBlock .swiper-slide.swiper-slide-active img{
+  .newsSliderBlock .swiper-slide.swiper-slide-active img {
     transform: scale(200%, 155%);
   }
 
@@ -5419,6 +5646,7 @@ Start responsive
     margin: 0;
     position: relative;
     top: -23px;
+    padding-right: 0;
   }
 
   .headerFixDesc {
@@ -6101,7 +6329,7 @@ Start responsive
     max-width: 50%;
     left: 0;
     padding: 40px 30px;
-    height: 100vh;
+    height: 87%;
   }
 
   .priceSlider input {
@@ -6336,7 +6564,6 @@ Start responsive
     background: #FFFFFF;
     max-width: 480px;
     width: 100%;
-    height: 100vh;
     position: fixed;
     top: 119px;
     left: 0;
@@ -6354,9 +6581,10 @@ Start responsive
   }
 
   .mobilHight {
-    height: 77%;
+    height: 440px;
     overflow-x: scroll;
     padding: 0 22px;
+    position: relative;
   }
 
   .fon {
@@ -6397,7 +6625,7 @@ Start responsive
   .mobilFilter__closed:after {
     content: "";
     display: block;
-    width: 10px;
+    width: 15px;
     height: 1px;
     background: rgba(0, 0, 0, .4);
     transform: rotate(45deg);
@@ -6406,7 +6634,7 @@ Start responsive
   .mobilFilter__closed:before {
     content: "";
     display: block;
-    width: 10px;
+    width: 15px;
     height: 1px;
     background: rgba(0, 0, 0, .4);
     transform: rotate(-45deg);
@@ -6529,9 +6757,101 @@ Start responsive
   .mobilFilterShow, .mobilFilter__title {
     display: block;
   }
+
+  .slider-for {
+    max-width: 319px;
+  }
+
+  .cardLeftSlider .slider-nav {
+    max-width: 100px;
+  }
+
+  .cardLeftSlider .slider-nav .slick-slide img {
+    height: 150px;
+  }
+
+  .menuIn .menuInBlock {
+    flex-direction: column;
+  }
+
+  .menuInBlock li {
+    max-width: 100%;
+  }
+
+  .menuMobilHover.active:after {
+    transform: rotate(0);
+    top: 0px;
+    left: 14px;
+  }
+
+  .mobilContent .menu li a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+
+  .menuIn {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 0;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    right: 0;
+    position: relative;
+  }
+
+  .menuInBlock li a span {
+    font-size: 14px;
+  }
+
+  .menuIn .menuInBlock li {
+    margin-bottom: 10px !important;
+  }
+
+  .menuInBlock li a img {
+    width: 50px;
+  }
+
+  .menuInBlock li a span {
+    margin: 5px 0 0 10px;
+  }
+
+  .menuInBlock li a span.menuInBlock__img {
+    height: 55px;
+  }
+
+  .menuIn::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: #F5F5F5;
+  }
+
+  .menuIn::-webkit-scrollbar {
+    width: 4px;
+    background-color: #F5F5F5;
+  }
+
+  .menuIn::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #AFAFAF;
+  }
 }
 
 @media (max-width: 940px) {
+  .header .headerIn .headerDesc {
+    padding-right: 45px;
+  }
+
   .footerLeft {
     max-width: 60%;
   }
@@ -6981,6 +7301,14 @@ Start responsive
   .catalogPageRight .sortingListPage {
     width: 206px !important;
   }
+
+  .slider-for {
+    max-width: 280px;
+  }
+
+  .cardLeftSlider .slider-nav .slick-slide img {
+    height: 120px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -7306,11 +7634,25 @@ Start responsive
   .productsMainVideoRight .newSlider {
     max-width: 100%;
   }
+
+  .slider-for {
+    max-width: 400px;
+  }
+
+  .cardLeftSlider .slider-nav {
+    max-width: 170px;
+  }
+
+  .cardLeftSlider .slider-nav .slick-slide img {
+    height: 150px;
+  }
 }
 
 @media (max-width: 680px) {
   .social {
-    max-width: 140px;
+    max-width: 240px;
+    position: absolute;
+    left: 40px;
   }
 
   .header2,
@@ -7323,11 +7665,6 @@ Start responsive
     right: 0;
   }
 
-  .social {
-    position: absolute;
-    left: 40px;
-  }
-
   .searchHeader {
     right: auto;
     left: 0;
@@ -7338,7 +7675,15 @@ Start responsive
   }
 
   .mobilContent {
-    max-width: 80%;
+    max-width: 300px;
+  }
+
+  .menuIn .menuInBlock li {
+    margin-bottom: 0 !important;
+  }
+
+  .menuIn {
+    height: 435px;
   }
 
   .titleBlock {
@@ -7683,7 +8028,7 @@ Start responsive
   }
 
   .mobilFilterShow {
-    bottom: 90px;
+    bottom: 0;
   }
 
   .productsMainVideoRight .newSliderBody .owl-carousel {
@@ -7692,6 +8037,50 @@ Start responsive
 
   .productsMainVideo2 .productsMainVideoRight .newSliderBody .owl-carousel {
     height: 343px;
+  }
+
+  .slider-for {
+    max-width: 350px;
+  }
+
+  .cardLeftSlider .slider-nav {
+    max-width: 130px;
+  }
+
+  .catalogAside {
+    top: 90px;
+  }
+
+  .headerFixDesc {
+    display: none !important;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .logo img.logoFix {
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
+  .mobilContent .lang.langMobil {
+    display: none;
+  }
+
+  .headerTop .lang.langMobilG {
+    display: flex;
+    position: absolute;
+    right: 0;
   }
 }
 
@@ -8051,7 +8440,7 @@ Start responsive
     font-size: 15px;
   }
 
-  .basketRightBottom__colorСircle {
+  .basketRightBottom__colorРЎircle {
     width: 15px;
     height: 15px;
   }
@@ -8245,7 +8634,7 @@ Start responsive
   }
 
   .cardSlider {
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .cardSlider__title {
@@ -8628,8 +9017,9 @@ Start responsive
   }
 
   .catalogPageRight .newSliderPrice__btn span,
-  .catalogPageRight .newSliderPrice__price {
-    font-size: 18px;
+  .catalogPageRight .newSliderPrice__price,
+  .newSliderArt div{
+    font-size: 18px!important;
   }
 
   .catalogPageRight .newSliderPrice__btn {
@@ -8644,9 +9034,28 @@ Start responsive
   .searchItemContent .newSlider .newSliderPrice__price, .searchItemContent .newSlider .newSliderPrice__btn span {
     font-size: 18px;
   }
+
+  .slider-for {
+    max-width: 299px;
+    height: 361px;
+  }
+
+  .cardBtn {
+    margin-top: 0;
+  }
+
+  .cardLeftSlider .slider-nav {
+    max-width: 100px;
+  }
+
+  .mobilHight {
+    padding: 0;
+  }
 }
 
 @media (max-width: 455px) {
+  .slider-for .slick-slide img {object-fit: cover;}
+  .zoomWrapper { height:360px!important; }
   .item {
     position: relative;
   }
@@ -8797,7 +9206,7 @@ Start responsive
   }
 
   .cardInfoList {
-    margin-top: 680px;
+    margin-top: 755px;
   }
 
   .cardInfoList li span {
@@ -8837,10 +9246,6 @@ Start responsive
     font-size: 16px;
   }
 
-  .cardSliderBlockMobilItem {
-    margin-bottom: 0;
-  }
-
   .catalogPageRight .navigationMenu li a {
     font-size: 16px;
     width: 30px;
@@ -8871,6 +9276,9 @@ Start responsive
     max-width: 90%;
   }
 
+  .cardLeftSlider .slider-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
@@ -8879,7 +9287,7 @@ Start responsive
   }
 
   .social {
-    max-width: 130px;
+    max-width: 200px;
     left: 30px;
   }
 
@@ -8976,17 +9384,5 @@ Start responsive
   .basketLeft {
     height: 172px;
     max-width: 135px;
-  }
-}
-
-@media (max-height: 890px) {
-  .mobilHight {
-    height: 70%;
-  }
-}
-
-@media (max-height: 760px) {
-  .mobilHight {
-    height: 60%;
   }
 }
