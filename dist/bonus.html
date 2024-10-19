@@ -10,7 +10,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
 
-    <title> Личный кабинет | Мои заказы</title>
+    <title> Личный кабинет | Мои бонусы</title>
 </head>
 <body>
 
@@ -44,6 +44,14 @@
         <ul class="social flex">
             <li>
                 <a href="">
+                    <img src="images/icon3.svg" alt="">
+                    <span class="social__text"> Бонусы </span>
+                    <span class="social__num bonus">9999</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
                     <img src="images/heart3.svg" alt="">
 
                     <span class="social__text"> Избранное </span>
@@ -52,14 +60,14 @@
 
             <li>
                 <a href="#" class="social__search">
-                    <img src="images/search2.svg" alt="" >
+                    <img src="images/search2.svg" alt="">
                     <span class="social__text"> Поиск </span>
                 </a>
             </li>
 
             <li>
                 <a href="">
-                    <img src="images/story2.svg" alt="" >
+                    <img src="images/story2.svg" alt="">
                     <span class="social__text"> Корзина </span>
                     <span class="social__num">33</span>
                 </a>
@@ -67,7 +75,7 @@
 
             <li>
                 <a href="">
-                    <img src="images/usa2.svg" alt="" >
+                    <img src="images/usa2.svg" alt="">
                     <span class="social__text"> Кабинет </span>
                 </a>
             </li>
@@ -174,7 +182,7 @@
         </li>
 
         <li>
-            <span>Мои заказы</span>
+            <span>Личная информация</span>
         </li>
     </ul>
 </section>
@@ -183,11 +191,11 @@
 <div class="cabinet">
     <ul class="cabinetList flex">
         <li>
-            <a href="order.html" class="cabinetList__active">Мои заказы</a>
+            <a href="order.html">Мои заказы</a>
         </li>
 
         <li>
-            <a href="bonus.html">Мои бонусы</a>
+            <a href="bonus.html" class="cabinetList__active">Мои бонусы</a>
         </li>
 
         <li>
@@ -195,50 +203,8 @@
         </li>
     </ul>
 
-    <div class="order">
-        <div class="item flex">
-            <div class="itemLeft">
-                <div class="item__num">Заказ №1234567</div>
+    <div class="bonusContent">
 
-                <div class="itemBlock flex">
-                    <a href="#" class="itemBlock__item">
-                        <img src="images/item8.png" alt="">
-                    </a>
-
-                    <a href="#" class="itemBlock__item">
-                        <img src="images/item9.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="itemRight">
-                <div class="itemRight__text">Завершён</div>
-                <div class="itemRight__date">10.11.2022</div>
-            </div>
-        </div>
-
-        <div class="item flex">
-            <div class="itemLeft">
-                <div class="item__num">Заказ №7654321</div>
-            </div>
-
-
-            <div class="itemRight">
-                <div class="itemRight__text">Не оплачен</div>
-                <a href="#" class="itemRight__btn flex">Оплатить заказ</a>
-            </div>
-        </div>
-
-        <div class="item flex">
-            <div class="itemLeft">
-                <div class="item__num">Заказ №1111111</div>
-            </div>
-
-
-            <div class="itemRight">
-                <div class="itemRight__text">В пути</div>
-                <div class="itemRight__paid">Оплачен</div>
-            </div>
-        </div>
     </div>
 </div>
 

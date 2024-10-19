@@ -1829,7 +1829,7 @@ Start cabinet
 }
 
 .cabinetList {
-  max-width: 710px;
+  max-width: 940px;
   width: 100%;
   margin: 0 auto;
   padding-top: 60px;
@@ -3464,11 +3464,16 @@ Start cardContent
   -webkit-flex-wrap: wrap;
   color: #FFFFFF;
   font-size: 30px;
-  margin: 0 auto;
   -webkit-transition: all, 0.5s;
   -moz-transition: all, 0.5s;
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
+}
+
+.cardBtnBlock {
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
 }
 
 .cardBtn li a:hover {
@@ -4922,6 +4927,42 @@ Start 14,02,2023
   margin: 0 5px 0 5px;
 }
 
+.cardBtnBlock__text {
+  color: #000;
+  font: normal normal 15px 'FuturaBookC', sans-serif;
+  margin-top: 15px;
+}
+
+.cardBtnBlock__num {
+  color: #E0D4B3;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.cardAddress {
+  margin-top: 60px;
+}
+
+.cardAddress li {
+  margin-bottom: 20px;
+}
+
+.cardAddress__address {
+  color: #000000;
+  font-size: 25px;
+}
+
+.cardAddress__no,
+.cardAddress__yes {
+  color: #67B26F;
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+.cardAddress__no {
+  color: #BF5353;
+}
+
 /*##############
 Start responsive
 ################*/
@@ -5429,6 +5470,8 @@ Start responsive
     height: 400px;
   }
 
+  .cardAddress__no, .cardAddress__yes,
+  .cardAddress__address,
   .cardInfoList li span {
     font-size: 20px;
   }
@@ -7159,6 +7202,11 @@ Start responsive
 }
 
 @media (max-width: 825px) {
+  .cardRightPrice__price2 {
+    font-size: 20px;
+  }
+
+  .cardRightPrice__price,
   .careBlock__title,
   .careBlock__paragraf {
     font-size: 18px;
@@ -7219,11 +7267,15 @@ Start responsive
   }
 
   .cardContent {
-    max-width: 700px;
+    max-width: 720px;
+  }
+
+  .cardAddress__no, .cardAddress__yes, .cardAddress__address, .cardInfoList li span {
+    font-size: 18px;
   }
 
   .cardLeft {
-    max-width: 395px;
+    max-width: 385px;
   }
 
   .cardRight {
@@ -7493,6 +7545,9 @@ Start responsive
     max-width: 99%;
   }
 
+  .cardAddress__no,
+  .cardAddress__yes,
+  .cardAddress__address,
   .cardInfoList li span {
     font-size: 22px;
   }
