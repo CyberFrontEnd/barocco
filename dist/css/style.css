@@ -1831,7 +1831,7 @@ Start cabinet
 .cabinetList {
   max-width: 940px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 0 0 115px;
   padding-top: 60px;
   justify-content: space-between;
 }
@@ -4962,6 +4962,245 @@ Start 14,02,2023
 .cardAddress__no {
   color: #BF5353;
 }
+
+.bonusTop {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bonusTopLeftStar {
+  align-items: center;
+}
+
+.bonusTopLeftStar__num {
+  color: #E0D4B3;
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.bonusTopLeft__text {
+  color: rgba(0, 0, 0, .4);
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.bonusContent {
+  margin-top: 50px;
+}
+
+.bonusTopRight {
+  max-width: 480px;
+  width: 100%;
+}
+
+.bonusList {
+  text-align: right;
+}
+
+.bonusList li span {
+  color: rgba(0, 0, 0, .4);
+  font-family: "FuturaBookC";
+  font-size: 20px;
+}
+
+.bonusList li {
+  margin-bottom: 10px;
+}
+
+.bonusList li span:last-of-type {
+  color: #000;
+}
+
+.historyBonus {
+  margin-top: 55px;
+}
+
+.historyBonus__title {
+  color: #000;
+  font: italic bold 20px 'Futura Md BT', sans-serif;
+  margin-bottom: 5px;
+}
+
+.historyBonus__text {
+  color: rgba(0, 0, 0, .4);
+  font: normal normal 15px 'FuturaBookC', sans-serif;
+  max-width: 220px;
+  width: 100%;
+}
+
+.historyBonusList > li {
+  border-top: 1px solid #000000;
+  padding: 23px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.historyBonusTop {
+  margin-bottom: 20px;
+}
+
+.historyBonusListLeft__num {
+  color: #E0D4B3;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.historyBonusListLeft .historyBonus__text {
+  max-width: 300px;
+}
+
+.conditions {
+  justify-content: flex-end;
+  margin-bottom: 70px;
+}
+
+.conditionsIn {
+  border: 3px solid #DACEC3;
+  border-right: none;
+  margin-top: 190px;
+  height: 380px;
+  max-width: 77%;
+  width: 100%;
+  background: url('../images/icon6.svg') no-repeat 60px -23px;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.conditionsBlockRight__title {
+  color: #000;
+  font: italic 600 20px 'Futura Md BT', sans-serif;
+}
+
+.conditionsBlock {
+  justify-content: space-between;
+  max-width: 940px;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 8.3%;
+}
+
+.conditionsBlockRight {
+  max-width: 400px;
+  width: 100%;
+}
+
+.conditionsBlockList {
+  max-width: 370px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.conditionsBlockList li {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.conditionsBlockList li:before {
+  content: "";
+  display: block;
+  background: url('../images/icon7.svg') no-repeat 0 0;
+  width: 24px;
+  height: 23px;
+}
+
+.conditionsBlockList li span {
+  color: rgba(0, 0, 0, .4);
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+  max-width: 320px;
+  width: 100%;
+  display: block;
+}
+
+.conditionsBlockLeft {
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+  margin-top: -140px;
+}
+
+.conditionsBlockLeft img {
+  position: absolute;
+  top: 0;
+}
+
+.conditionsBlockLeftTop {
+  color: #000;
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+  background: #E5E5E5;
+  padding: 34px 31px;
+  position: relative;
+  z-index: 1;
+}
+
+.conditionsBottom {
+  background: #DACEC3;
+  position: absolute;
+  bottom: -100px;
+  left: 31%;
+  z-index: 2;
+  max-width: 485px;
+  width: 100%;
+  padding: 21px 60px;
+  color: #FFFFFF;
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+}
+
+.infoTop {
+  margin-top: 50px;
+}
+
+.infoTop .bonusList li {
+  text-align: left;
+}
+
+.infoTop .bonusTopLeft {
+  text-align: right;
+}
+
+.infoTop .bonusTopLeftStar {
+  justify-content: flex-end;
+}
+
+.infoTop .bonusTopLeftStar img {
+  width: 40px;
+}
+
+.infoTop .bonusTopLeftStar__num {
+  font-size: 30px;
+}
+
+.infoTop .bonusTopLeft__text {
+  max-width: 202px;
+  margin-top: 5px;
+}
+
 
 /*##############
 Start responsive
