@@ -5393,6 +5393,37 @@ Start 14,02,2023
   top: 0;
 }
 
+.popupRegister {
+  max-width: 490px !important;
+  width: 100% !important;
+}
+
+.popupRegister__title {
+  color: #000;
+  text-align: center;
+  font: italic bold 25px 'Futura Md BT', sans-serif;
+}
+
+.popupRegister__text {
+  text-align: center;
+  color: rgba(0,0,0, .4);
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.popupRegister__text2 {
+  color: #000;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.popupRegisterForm {
+  max-width: 390px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /*##############
 Start responsive
 ################*/
