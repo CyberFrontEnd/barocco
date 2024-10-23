@@ -1929,7 +1929,7 @@ Start cabinet
 }
 
 .order {
-  padding-top: 30px;
+  padding-top: 100px;
 }
 
 .itemBlock__item {
@@ -5201,6 +5201,197 @@ Start 14,02,2023
   margin-top: 5px;
 }
 
+.orderBtn {
+  max-width: 600px;
+  width: 100%;
+  margin: 30px auto 0;
+  justify-content: space-between;
+}
+
+.orderBtn__btn2,
+.orderBtn__btn {
+  max-width: 262px;
+  width: 100%;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font: normal normal 25px 'FuturaBookC', sans-serif;
+  background: #DACEC3;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.orderBtn__btn:hover {
+  background: #ccbbab;
+}
+
+.orderBtn__btn2 {
+  background: #000;
+}
+
+.orderBtn__btn2:hover {
+  background: #ccbbab;
+}
+
+.orderMenu .has-arrow {
+  justify-content: space-between;
+}
+
+.orderMenu .has-arrow::after {
+  background: none !important;
+  width: 25px !important;
+  height: 25px !important;
+  border: 1px solid #B3B3B3 !important;
+  border-top: none !important;
+  border-left: none !important;
+  transform: rotate(45deg) !important;
+  transform-origin: 50% 50% !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 10px !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.orderMenu .mm-active .has-arrow::after {
+  transform: translateY(30%) rotate(225deg) !important;
+}
+
+.orderMenu .has-arrow > span {
+  color: #000;
+  font: italic bold 20px 'Futura Md BT', sans-serif;
+}
+
+.orderMenuRight {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.orderMenuRight span {
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+  display: block;
+  color: rgba(0, 0, 0, .4);
+}
+
+.orderMenuRight span.orderMenuRight__end {
+  color: rgba(0, 0, 0, .4);
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+  text-transform: none;
+}
+
+.orderMenuRight span.orderMenuRight__date {
+  color: #000;
+  margin-top: 10px;
+}
+
+.orderMenuContent .orderMenu__img {
+  width: 151px;
+  height: 195px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.orderMenuContentRight__title {
+  color: #000;
+  font-size: 30px;
+}
+
+.orderMenuContentRight {
+  margin-left: 40px;
+}
+
+.orderMenuContentRight__color {
+  color: #000;
+  font-size: 20px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.orderMenuContentRight .basketRightBottom__colorСircle {
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+}
+
+.orderMenuContentRight__buy {
+  color: #000;
+  font-size: 20px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.orderMenuContent {
+  position: relative;
+  margin-top: 30px;
+}
+
+.orderMenuContent .orderMenu__img img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orderMenu li ul li {
+  margin-bottom: 30px;
+}
+
+.orderMenu > li {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.orderMenuRight .itemRight__btn {
+  max-width: 195px;
+  width: 100%;
+}
+
+.orderMenu > li.mm-active {
+  padding-bottom: 40px;
+}
+
+.orderMenu > li:nth-child(2) {
+  padding-bottom: 140px;
+}
+
+.orderMenu > li:last-of-type {
+  border-bottom: none;
+}
+
+.orderMenu .has-arrow span.orderMenu__rollUp {
+  position: absolute;
+  top: 28px;
+  right: -50px;
+  background: #000;
+  color: #FFFFFF;
+  z-index: 1;
+  font: normal normal 15px 'FuturaBookC', sans-serif;
+  text-transform: none;
+  padding: 5px;
+  opacity: 0;
+  transition: all, 0.5s;
+}
+
+.orderMenu .mm-active .has-arrow span.orderMenu__rollUp {
+  opacity: 1;
+}
+
+.orderMenu .has-arrow {
+  z-index: 9;
+}
+
+.orderMenu > li:first-of-type .orderMenuRight {
+  top: 0;
+}
 
 /*##############
 Start responsive
@@ -5857,6 +6048,10 @@ Start responsive
 }
 
 @media (max-width: 1100px) {
+  .orderMenuContentRight {
+    max-width: 70%;
+    width: 100%;
+  }
   .newsSliderBlock .swiper-slide.swiper-slide-active img {
     transform: scale(200%, 155%);
   }
@@ -5898,6 +6093,18 @@ Start responsive
 
   .productsMainVideo2 .productsMainVideoLeft video {
     height: 1072px;
+  }
+
+  .orderMenu .has-arrow span.orderMenu__rollUp {
+    right: 0;
+  }
+
+  .cabinetList {
+    margin: 0 auto;
+  }
+
+  .cabinetList li:last-of-type {
+    margin-right: 0;
   }
 }
 
@@ -6631,6 +6838,10 @@ Start responsive
   .catalogMenu > li > a::after,
   .metismenu .has-arrow::after {
     display: none;
+  }
+
+  .orderMenu .has-arrow::after {
+    display: block;
   }
 
   .catalogMenu > li > a,
@@ -7603,6 +7814,15 @@ Start responsive
 }
 
 @media (max-width: 768px) {
+  .orderMenuContentRight {
+    max-width: 66%;
+  }
+
+  .orderMenuContentRight__title{
+    max-height: 73px;
+    overflow: hidden;
+  }
+
   .mobilContent {
     padding: 30px 20px;
   }
@@ -7712,7 +7932,8 @@ Start responsive
   }
 
   .cabinetList {
-    max-width: 400px;
+    max-width: 100%;
+    margin: 0;
   }
 
   .basketOrderPriceLeft {
@@ -7943,6 +8164,53 @@ Start responsive
 }
 
 @media (max-width: 680px) {
+  .orderMenuContentRight {
+    margin-left: 20px;
+  }
+
+  .orderMenuContent .orderMenu__img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .orderMenuContentRight__title {
+    font-size: 22px;
+  }
+
+  .orderMenu .has-arrow > span,
+  .orderMenuContentRight__buy,
+  .orderMenuContentRight__color {
+    font-size: 16px;
+  }
+
+  .orderMenuContentRight .basketRightBottom__colorСircle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .orderMenuRight span.orderMenuRight__end,
+  .orderMenuRight span.orderMenuRight__date {
+    font-size: 16px;
+  }
+
+  .orderMenu .has-arrow span.orderMenu__rollUp {
+    font-size: 12px;
+  }
+
+  .orderBtn__btn2, .orderBtn__btn {
+    max-width: 48%;
+    font-size: 22px;
+  }
+
+  .cabinetList li a {
+    font-size: 18px;
+  }
+
+  .orderMenuContentRight {
+    max-width: 50%;
+    width: 100%;
+  }
+
   .social {
     max-width: 240px;
     position: absolute;
@@ -8379,6 +8647,14 @@ Start responsive
 }
 
 @media (max-width: 560px) {
+  .orderMenuContentRight__title {
+    max-height: 50px;
+  }
+
+  .cardAddress {
+    margin-top: 330px;
+  }
+
   .newsContentBlock {
     max-width: 90%;
     width: 100%;
@@ -8655,8 +8931,8 @@ Start responsive
     font-size: 15px;
   }
 
-  .cabinetList {
-    max-width: 300px;
+  .orderBtn__btn2, .orderBtn__btn {
+    font-size: 20px;
   }
 
   .itemRight {
@@ -8840,7 +9116,12 @@ Start responsive
 
   .cardContent {
     max-width: 400px;
-    padding-bottom: 200px;
+    padding-bottom: 0;
+  }
+
+  .cardRight__title {
+    max-width: 250px;
+    width: 100%;
   }
 
   .cardInfoList li span {
@@ -9348,6 +9629,34 @@ Start responsive
 }
 
 @media (max-width: 455px) {
+  .orderMenuContent .orderMenu__img{
+    width: 120px;
+  }
+
+  .orderMenuRight {
+    max-width: 160px;
+  }
+
+  .cardRightPay {
+    max-width: 215px;
+  }
+
+  .cardRightPay__text {
+    font-size: 12px;
+  }
+
+  .cardAddress__no,
+  .cardAddress__yes,
+  .cardAddress__address,
+  .cardRightPrice__price,
+  .cardRightPrice__price2 {
+    font-size: 16px;
+  }
+
+  .cardAddress {
+    margin-top: 250px;
+  }
+
   .slider-for .slick-slide img {object-fit: cover;}
   .zoomWrapper { height:360px!important; }
   .item {

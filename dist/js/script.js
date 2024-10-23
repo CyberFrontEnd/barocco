@@ -1,6 +1,7 @@
 $(document).ready(function () {
   new WOW().init();
 
+	$(".orderMenu").metisMenu();
 
 
   $(window).scroll(function(){

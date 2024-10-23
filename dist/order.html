@@ -9,6 +9,7 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/metis.css" rel="stylesheet">
 
     <title> Личный кабинет | Мои заказы</title>
 </head>
@@ -203,50 +204,182 @@
         </li>
     </ul>
 
+    <div class="flex orderBtn">
+        <a href="#" class="orderBtn__btn flex">Заказы с сайта</a>
+        <a href="#" class="orderBtn__btn2 flex">Покупки в магазине</a>
+    </div>
+
     <div class="order">
-        <div class="item flex">
-            <div class="itemLeft">
-                <div class="item__num">Заказ №1234567</div>
+        <ul class="orderMenu">
+            <li>
+                <a class="has-arrow" href="#">
+                    <span>Заказ №1234567</span>
 
-                <div class="itemBlock flex">
-                    <a href="#" class="itemBlock__item">
-                        <img src="images/item8.png" alt="">
-                    </a>
+                    <span class="orderMenuRight">
+                        <span class="orderMenuRight__end">Завершён</span>
+                        <span class="orderMenuRight__date">10.11.2022</span>
+                    </span>
 
-                    <a href="#" class="itemBlock__item">
-                        <img src="images/item9.png" alt="">
-                    </a>
+                    <span class="orderMenu__rollUp">Свернуть</span>
+                </a>
+
+                <ul>
+                    <li>
+                        <div class="orderMenuContent flex">
+                            <div class="orderMenu__img">
+                                <img src="images/order.png" alt="" loading="lazy">
+                            </div>
+
+                            <div class="orderMenuContentRight">
+                                <div class="orderMenuContentRight__title">Туфли 01-22</div>
+
+                                <div class="orderMenuContentRight__color flex">Цвет:
+                                    <div class="basketRightBottom__colorСircle black"></div>
+                                </div>
+
+                                <div class="orderMenuContentRight__color">Размер: 36</div>
+
+                                <div class="orderMenuContentRight__color">Количество: 1</div>
+
+                                <div class="orderMenuContentRight__buy">9 450 ₽</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="orderMenuContent flex">
+                            <div class="orderMenu__img">
+                                <img src="images/order2.png" alt="" loading="lazy">
+                            </div>
+
+                            <div class="orderMenuContentRight">
+                                <div class="orderMenuContentRight__title">Ботильоны XLY9007-TT</div>
+
+                                <div class="orderMenuContentRight__color flex">Цвет
+                                    <div class="basketRightBottom__colorСircle red"></div>
+                                </div>
+
+                                <div class="orderMenuContentRight__color">Размер: 36</div>
+
+                                <div class="orderMenuContentRight__buy">18 000 ₽</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="has-arrow" href="#">
+                    <span>Заказ №1234567</span>
+                    <span class="orderMenu__rollUp">Свернуть</span>
+                </a>
+
+                <div class="orderMenuRight">
+                        <span class="orderMenuRight__end">Не оплачен</span>
+                        <a href="#" class="itemRight__btn flex">Оплатить заказ</a>
+                    </div>
+
+                <ul>
+                    <li>
+                        <div class="orderMenuContent flex">
+                            <div class="orderMenu__img">
+                                <img src="images/order.png" alt="" loading="lazy">
+                            </div>
+
+                            <div class="orderMenuContentRight">
+                                <div class="orderMenuContentRight__title">Туфли 01-22</div>
+
+                                <div class="orderMenuContentRight__color flex">Цвет:
+                                    <div class="basketRightBottom__colorСircle black"></div>
+                                </div>
+
+                                <div class="orderMenuContentRight__color">Размер: 36</div>
+
+                                <div class="orderMenuContentRight__color">Количество: 1</div>
+
+                                <div class="orderMenuContentRight__buy">9 450 ₽</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="orderMenuContent flex">
+                            <div class="orderMenu__img">
+                                <img src="images/order2.png" alt="" loading="lazy">
+                            </div>
+
+                            <div class="orderMenuContentRight">
+                                <div class="orderMenuContentRight__title">Ботильоны XLY9007-TT</div>
+
+                                <div class="orderMenuContentRight__color flex">Цвет
+                                    <div class="basketRightBottom__colorСircle red"></div>
+                                </div>
+
+                                <div class="orderMenuContentRight__color">Размер: 36</div>
+
+                                <div class="orderMenuContentRight__buy">18 000 ₽</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="has-arrow" href="#">
+                    <span>Заказ №1111111</span>
+                    <span class="orderMenu__rollUp">Свернуть</span>
+                </a>
+
+                <div class="orderMenuRight">
+                    <span class="orderMenuRight__end">В пути</span>
+                    <span class="orderMenuRight__date">Оплачен</span>
                 </div>
-            </div>
-            <div class="itemRight">
-                <div class="itemRight__text">Завершён</div>
-                <div class="itemRight__date">10.11.2022</div>
-            </div>
-        </div>
 
-        <div class="item flex">
-            <div class="itemLeft">
-                <div class="item__num">Заказ №7654321</div>
-            </div>
+                <ul>
+                    <li>
+                        <div class="orderMenuContent flex">
+                            <div class="orderMenu__img">
+                                <img src="images/order.png" alt="" loading="lazy">
+                            </div>
 
+                            <div class="orderMenuContentRight">
+                                <div class="orderMenuContentRight__title">Туфли 01-22</div>
 
-            <div class="itemRight">
-                <div class="itemRight__text">Не оплачен</div>
-                <a href="#" class="itemRight__btn flex">Оплатить заказ</a>
-            </div>
-        </div>
+                                <div class="orderMenuContentRight__color flex">Цвет:
+                                    <div class="basketRightBottom__colorСircle black"></div>
+                                </div>
 
-        <div class="item flex">
-            <div class="itemLeft">
-                <div class="item__num">Заказ №1111111</div>
-            </div>
+                                <div class="orderMenuContentRight__color">Размер: 36</div>
 
+                                <div class="orderMenuContentRight__color">Количество: 1</div>
 
-            <div class="itemRight">
-                <div class="itemRight__text">В пути</div>
-                <div class="itemRight__paid">Оплачен</div>
-            </div>
-        </div>
+                                <div class="orderMenuContentRight__buy">9 450 ₽</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="orderMenuContent flex">
+                            <div class="orderMenu__img">
+                                <img src="images/order2.png" alt="" loading="lazy">
+                            </div>
+
+                            <div class="orderMenuContentRight">
+                                <div class="orderMenuContentRight__title">Ботильоны XLY9007-TT</div>
+
+                                <div class="orderMenuContentRight__color flex">Цвет
+                                    <div class="basketRightBottom__colorСircle red"></div>
+                                </div>
+
+                                <div class="orderMenuContentRight__color">Размер: 36</div>
+
+                                <div class="orderMenuContentRight__buy">18 000 ₽</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 
@@ -349,6 +482,7 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/wow.js"></script>
+<script src="js/metis.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
