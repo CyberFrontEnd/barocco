@@ -5403,6 +5403,10 @@ Start responsive
 }
 
 @media (max-width: 1780px) {
+  .conditionsIn {
+    max-width: 80%;
+  }
+
   .topSliderSwipe video, .topSliderSwipe img {
     height: 1000px;
   }
@@ -5418,12 +5422,23 @@ Start responsive
 }
 
 @media (max-width: 1600px) {
+  .conditionsIn {
+    max-width: 82%;
+
+  }
+
   .logo {
     margin-left: 75px;
   }
 }
 
 @media (max-width: 1550px) {
+  .conditionsIn {
+    max-width: 84%;
+    background-position: 43px -23px;
+
+  }
+
   .topSlider .swiper-pagination {
     bottom: 70px !important;
   }
@@ -5434,6 +5449,11 @@ Start responsive
 }
 
 @media (max-width: 1440px) {
+  .conditionsIn {
+    max-width: 85%;
+    background-position: 30px -23px;
+  }
+
   .slider-for {
     max-width: 429px;
   }
@@ -5579,6 +5599,10 @@ Start responsive
 }
 
 @media (max-width: 1290px) {
+  .conditionsIn {
+    max-width: 91%;
+  }
+
   .cardLeftSlider .slider-nav {
     max-width: 120px;
   }
@@ -5759,6 +5783,21 @@ Start responsive
 
   .cardLeftSlider .slider-nav .slick-slide img {
     height: 180px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .conditionsIn {
+    max-width: 95%;
+  }
+
+  .conditionsBlockLeft {
+    max-width: 425px;
+    margin-top: -105px;
+  }
+
+  .conditionsBlockLeftTop {
+    font-size: 18px;
   }
 }
 
@@ -6109,6 +6148,32 @@ Start responsive
 }
 
 @media (max-width: 1025px) {
+  .conditionsBlockLeft {
+    max-width: 370px;
+    margin-top: -70px;
+  }
+
+  .conditionsBlock {
+    margin-left: 10%;
+    max-width: 780px;
+  }
+
+  .conditionsIn {
+    margin-top: 90px;
+  }
+
+  .conditionsBlockLeftTop {
+    font-size: 15px;
+  }
+
+  .conditionsBlockList li span {
+    font-size: 18px;
+  }
+
+  .conditionsBlockRight {
+    max-width: 370px;
+  }
+  
   .navSwipe9 {
     display: block;
   }
@@ -7341,6 +7406,44 @@ Start responsive
 }
 
 @media (max-width: 940px) {
+  .conditionsIn {
+    margin-bottom: 150px;
+  }
+
+  .conditionsBlockRight {
+    max-width: 320px;
+  }
+
+  .conditionsBlockList li span {
+    max-width: 280px;
+  }
+
+  .conditionsBlockLeft {
+    max-width: 330px;
+    margin-top: -43px;
+  }
+
+  .conditionsBlock {
+    max-width: 660px;
+  }
+
+  .conditionsBottom {
+    font-size: 18px;
+    padding: 28px 15px;
+  }
+
+  .conditionsIn {
+    background-position: 11px -23px;
+  }
+
+  .conditionsBlockLeftTop {
+    padding: 23px 12px;
+  }
+
+  .bonusTopRight {
+    max-width: 395px;
+  }
+  
   .header .headerIn .headerDesc {
     padding-right: 45px;
   }
@@ -7814,6 +7917,32 @@ Start responsive
 }
 
 @media (max-width: 768px) {
+  .conditionsIn {
+    border: none;
+    background: none;
+    margin: 50px auto 100px;
+  }
+
+  .conditionsBlock {
+    margin-left: 0;
+  }
+
+  .conditionsBottom {
+    left: 12%;
+  }
+
+  .bonusList li span {
+    font-size: 18px;
+  }
+
+  .bonusTopRight {
+    max-width: 260px;
+  }
+
+  .bonusList li span:last-of-type {
+    display: block;
+  }
+
   .orderMenuContentRight {
     max-width: 66%;
   }
@@ -8644,9 +8773,74 @@ Start responsive
     position: absolute;
     right: 0;
   }
+
+  .conditionsBlockRight,
+  .conditionsBlockLeft {
+    max-width: 100%;
+  }
+
+  .conditionsIn {
+    height: auto;
+  }
+
+  .conditionsBottom {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .conditionsBlockLeft img,
+  .conditionsBlockRight {
+    position: relative;
+  }
+
+  .conditionsBlockLeft img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+  }
+
+  .conditionsBlockLeftTop {
+    font-size: 20px;
+  }
+
+  .conditionsBlockRight {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .conditionsBlockList li span{
+    font-size: 20px;
+  }
+
+  .conditionsBlockList li span{
+    max-width: 90%;
+  }
+
+  .conditionsBlockList {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 560px) {
+  .conditionsBlockList {
+    max-width: 95%;
+  }
+  .historyBonusListLeft {
+    max-width: 210px;
+    width: 100%;
+  }
+
+  .bonusTopLeft {
+    max-width: 220px;
+    width: 100%;
+  }
+
+  .bonusTopRight {
+    max-width: 230px;
+  }
+
   .orderMenuContentRight__title {
     max-height: 50px;
   }
@@ -9628,6 +9822,16 @@ Start responsive
   }
 }
 
+@media (max-width: 500px) {
+  .bonusTopLeft {
+    max-width: 100%;
+  }
+
+  .bonusTopRight {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 455px) {
   .orderMenuContent .orderMenu__img{
     width: 120px;
@@ -9885,6 +10089,10 @@ Start responsive
 }
 
 @media (max-width: 400px) {
+  .historyBonusListLeft {
+    max-width: 150px;
+  }
+
   .logo img {
     width: 110px;
   }
