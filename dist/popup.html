@@ -24,13 +24,183 @@
     <div class="popupRegister__text2">Только для зарегистрированных пользователей</div>
 
     <form action="" class="popupRegisterForm">
-        <input placeholder="E-mail" required type="text">
-        <input placeholder="Пароль" required type="password">
+        <div class="popupRegisterForm__imput">
+            <input placeholder="E-mail" required type="text">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20"/>
+
+                <g clip-path="url(#clip0_1936_1306)">
+                    <path d="M8.98228 13.3895L20.448 19.1196L31.9138 13.3895C31.805 13.0773 31.6022 12.8064 31.3334 12.6141C31.0645 12.4217 30.7427 12.3173 30.4121 12.3151H10.482C10.1514 12.3173 9.82959 12.4217 9.56071 12.6141C9.29184 12.8064 9.08909 13.0773 8.9803 13.3895M31.9976 15.3671L20.446 21.1399L8.89453 15.3671V26.3574C8.89662 26.7775 9.06444 27.1798 9.36151 27.4769C9.65858 27.774 10.0609 27.9418 10.481 27.9439H30.4111C30.8312 27.9418 31.2335 27.774 31.5306 27.4769C31.8277 27.1798 31.9955 26.7775 31.9976 26.3574V15.3671Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_1936_1306">
+                        <rect width="23.1035" height="15.6297" fill="white" transform="translate(8.89648 12.3151)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+
+
+        <input placeholder="Пароль" required type="password" maxlength="40">
+
+        <a href="#" class="popupRegisterForm__submit flex">Войти</a>
+
+
+        <div class="popupRegisterFormCheckbox">
+            <label class="blockCheckbox">Согласен(-на) с условиями политики обработки <a href="">персональных данных.</a>
+                <input type="checkbox" checked="checked" name="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <a href="#" class="popupRegisterForm__num">
+            <span>Войти по номеру телефона</span>
+        </a>
     </form>
+</div>
+
+<br> <br>
+
+<!--Вход / регистрация c ошибкой-->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister2"><span>Вход / регистрация c ошибкой</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister2">
+    <h3 class="popupRegister__title">Вход / регистрация</h3>
+    <div class="popupRegister__text">Войти по почте</div>
+    <div class="popupRegister__text2">Только для зарегистрированных пользователей</div>
+
+    <form action="" class="popupRegisterForm">
+        <div class="popupRegisterForm__imput mistake">
+            <input placeholder="E-mail" required type="text">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20"/>
+
+                <g clip-path="url(#clip0_1936_1306)">
+                    <path d="M8.98228 13.3895L20.448 19.1196L31.9138 13.3895C31.805 13.0773 31.6022 12.8064 31.3334 12.6141C31.0645 12.4217 30.7427 12.3173 30.4121 12.3151H10.482C10.1514 12.3173 9.82959 12.4217 9.56071 12.6141C9.29184 12.8064 9.08909 13.0773 8.9803 13.3895M31.9976 15.3671L20.446 21.1399L8.89453 15.3671V26.3574C8.89662 26.7775 9.06444 27.1798 9.36151 27.4769C9.65858 27.774 10.0609 27.9418 10.481 27.9439H30.4111C30.8312 27.9418 31.2335 27.774 31.5306 27.4769C31.8277 27.1798 31.9955 26.7775 31.9976 26.3574V15.3671Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_1936_1306">
+                        <rect width="23.1035" height="15.6297" fill="white" transform="translate(8.89648 12.3151)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+
+
+        <div class="popupRegisterForm__imput mistake">
+            <input placeholder="Пароль" required type="password" maxlength="40">
+        </div>
+
+        <div class="popupRegisterForm__mistake">Почта не обнаружена или введён неверный пароль</div>
+
+        <a href="#" class="popupRegisterForm__num password">
+            <span>Восстановить пароль</span>
+        </a>
+
+        <a href="#" class="popupRegisterForm__submit flex">Войти</a>
+
+
+        <div class="popupRegisterFormCheckbox">
+            <label class="blockCheckbox">Согласен(-на) с условиями политики обработки <a href="">персональных данных.</a>
+                <input type="checkbox" checked="checked" name="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <a href="#" class="popupRegisterForm__num">
+            <span>Войти по номеру телефона</span>
+        </a>
+    </form>
+</div>
+
+<br><br>
+
+<!-- Восстановление пароля -->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister3"><span>Восстановление пароля</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister3">
+    <h3 class="popupRegister__title">Восстановление пароля</h3>
+
+    <form action="" class="popupRegisterForm">
+        <div class="popupRegisterForm__imput">
+            <input placeholder="E-mail" required type="text">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20"/>
+
+                <g clip-path="url(#clip0_1936_1306)">
+                    <path d="M8.98228 13.3895L20.448 19.1196L31.9138 13.3895C31.805 13.0773 31.6022 12.8064 31.3334 12.6141C31.0645 12.4217 30.7427 12.3173 30.4121 12.3151H10.482C10.1514 12.3173 9.82959 12.4217 9.56071 12.6141C9.29184 12.8064 9.08909 13.0773 8.9803 13.3895M31.9976 15.3671L20.446 21.1399L8.89453 15.3671V26.3574C8.89662 26.7775 9.06444 27.1798 9.36151 27.4769C9.65858 27.774 10.0609 27.9418 10.481 27.9439H30.4111C30.8312 27.9418 31.2335 27.774 31.5306 27.4769C31.8277 27.1798 31.9955 26.7775 31.9976 26.3574V15.3671Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_1936_1306">
+                        <rect width="23.1035" height="15.6297" fill="white" transform="translate(8.89648 12.3151)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="popupRegisterForm__info">Введите свой E-mail, и мы вышлем вам инструкции по получению нового пароля.</div>
+
+        <a href="#" class="popupRegisterForm__submit flex">Подтвердить</a>
+    </form>
+</div>
+
+<br><br>
+
+<!-- Восстановление пароля c ошибкой-->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister4"><span>Восстановление пароля c ошибкой</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister4">
+    <h3 class="popupRegister__title">Восстановление пароля</h3>
+
+    <form action="" class="popupRegisterForm">
+        <div class="popupRegisterForm__imput mistake">
+            <input placeholder="E-mail" required type="text">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20"/>
+
+                <g clip-path="url(#clip0_1936_1306)">
+                    <path d="M8.98228 13.3895L20.448 19.1196L31.9138 13.3895C31.805 13.0773 31.6022 12.8064 31.3334 12.6141C31.0645 12.4217 30.7427 12.3173 30.4121 12.3151H10.482C10.1514 12.3173 9.82959 12.4217 9.56071 12.6141C9.29184 12.8064 9.08909 13.0773 8.9803 13.3895M31.9976 15.3671L20.446 21.1399L8.89453 15.3671V26.3574C8.89662 26.7775 9.06444 27.1798 9.36151 27.4769C9.65858 27.774 10.0609 27.9418 10.481 27.9439H30.4111C30.8312 27.9418 31.2335 27.774 31.5306 27.4769C31.8277 27.1798 31.9955 26.7775 31.9976 26.3574V15.3671Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_1936_1306">
+                        <rect width="23.1035" height="15.6297" fill="white" transform="translate(8.89648 12.3151)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="popupRegisterForm__info">Введите свой E-mail, и мы вышлем вам инструкции по получению нового пароля.</div>
+
+        <a href="#" class="popupRegisterForm__submit flex">Подтвердить</a>
+
+        <a href="#" class="popupRegisterForm__num">
+            <span>Войти по номеру телефона</span>
+        </a>
+    </form>
+</div>
+
+<br><br>
+
+<!-- Восстановление пароля 3-->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister5"><span>Восстановление пароля 3</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister5">
+    <h3 class="popupRegister__title">Восстановление пароля</h3>
+
+    <div class="popupRegisterFormPassword flex">
+        <div class="popupRegisterFormPassword__text">На почту</div>
+        <div class="popupRegisterFormPassword__mail">alisavorobyovava@gmail.com</div>
+        <div class="popupRegisterFormPassword__text">было выслано сообщение</div>
+    </div>
 </div>
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/fancybox.js"></script>
 <script src="js/script.js"></script>
+<script>
+  $('[data-fancybox]').fancybox({
+    autoFocus: false,
+  });
+</script>
 </body>
 </html>

@@ -3206,6 +3206,7 @@ Start makingOrder
 .total__price {
   color: #FFFFFF;
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .total__price b {
@@ -5401,27 +5402,201 @@ Start 14,02,2023
 .popupRegister__title {
   color: #000;
   text-align: center;
-  font: italic bold 25px 'Futura Md BT', sans-serif;
+  font: italic bolder 25px 'Futura Md BT', sans-serif;
 }
 
 .popupRegister__text {
   text-align: center;
   color: rgba(0,0,0, .4);
-  font-size: 25px;
-  padding-top: 10px;
+  padding-top: 5px;
+  font: italic normal 25px 'FuturaBookC', sans-serif;
+}
+
+.fancybox-button svg {
+  color: rgba(0, 0, 0, .4);
 }
 
 .popupRegister__text2 {
   color: #000;
   font-size: 15px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .popupRegisterForm {
   max-width: 390px;
   width: 100%;
   margin: 0 auto;
+}
+
+.popupRegisterForm__imput input,
+.popupRegisterForm > input {
+  max-width: 390px;
+  width: 100%;
+  height: 58px;
+  border: 1px solid #000000;
+  border-radius: 9px;
+  margin-bottom: 12px;
+  padding-left: 77px;
+  color: rgba(0, 0, 0, .4);
+  font-size: 20px;
+}
+
+.popupRegisterForm__imput {
+  position: relative;
+}
+
+.popupRegisterForm__imput svg {
+  position: absolute;
+  top: 9px;
+  left: 21px;
+  fill: #DACEC3;
+}
+
+.popupRegisterForm {
+  margin-top: 20px;
+}
+
+.popupRegisterForm input::-moz-placeholder {
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+  color: rgba(0, 0, 0, .4);
+}
+
+.popupRegisterForm input::-webkit-input-placeholder {
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+  color: rgba(0, 0, 0, .4);
+}
+
+.popupRegisterForm input:-ms-input-placeholder {
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+  color: rgba(0, 0, 0, .4);
+}
+
+.popupRegisterForm__submit {
+  max-width: 390px;
+  width: 100%;
+  height: 58px;
+  background: #AEAEAE;
+  color: #FFFFFF;
+  font: italic bolder 25px 'Futura Md BT', sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.popupRegisterForm__submit:hover {
+  background: #DACEC3;
+}
+
+.popupRegisterForm__num {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.popupRegisterForm__num span {
+  color: #000;
+  font: normal bold 20px 'FuturaBookC', sans-serif;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+}
+
+.popupRegisterFormCheckbox .checkmark {
+  border-radius: 3px;
+  border: 1px solid #AEAEAE !important;
+  width: 23px;
+  height: 23px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.popupRegisterFormCheckbox .checkmark:after {
+  display: none !important;
+}
+
+.popupRegisterFormCheckbox .checkmark:before {
+  content: "";
+  background: url('../images/icon8.svg') no-repeat center;
+  width: 16px;
+  height: 12px;
+  display: block;
+}
+
+.popupRegisterFormCheckbox .blockCheckbox a {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 3px;
+}
+
+.popupRegisterFormCheckbox {
+  margin-top: 50px;
+}
+
+.popupRegisterForm > input[type="password"] {
+  color: #000000;
+}
+
+.popupRegisterForm__imput.mistake input {
+  border: 1px solid #FF0000;
+}
+
+.popupRegisterForm__imput.mistake svg {
+  fill: #FF0000;
+}
+
+.popupRegisterForm__mistake {
+  color: #FF0000;
+  font: normal normal 15px 'FuturaBookC', sans-serif;
+  margin-top: -5px;
+}
+
+.popupRegisterForm__num.password {
+  margin-top: 20px;
+}
+
+.popupRegisterForm__info {
+  color: #000;
+  font: normal normal 15px 'FuturaBookC', sans-serif;
+}
+
+.popupRegisterFormPassword {
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popupRegisterFormPassword__text {
+  color: #000;
+  font: normal normal 25px 'FuturaBookC', sans-serif;
+}
+
+.popupRegisterFormPassword__mail {
+  color: #DACEC3;
+  font: normal bolder 25px 'FuturaBookC', sans-serif;
+  margin: 5px 0;
+}
+
+.total__text {
+  color: #FFFFFF;
+  font: normal normal 18px 'FuturaBookC', sans-serif;
 }
 
 /*##############

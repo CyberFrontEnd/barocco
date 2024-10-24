@@ -3,10 +3,6 @@ $(document).ready(function () {
 
 	$(".orderMenu").metisMenu();
 
-	$('[data-fancybox]').fancybox({
-	      autoFocus: false,
-	 });
-
 
   $(window).scroll(function(){
   		if ($(window).scrollTop() > 50) {

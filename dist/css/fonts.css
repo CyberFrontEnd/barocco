@@ -50,3 +50,17 @@
   font-display: swap;
 }
 
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/FuturaBT-BoldItalic.eot');
+  src: url('../fonts/FuturaBT-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FuturaBT-BoldItalic.woff2') format('woff2'),
+  url('../fonts/FuturaBT-BoldItalic.woff') format('woff'),
+  url('../fonts/FuturaBT-BoldItalic.ttf') format('truetype'),
+  url('../fonts/FuturaBT-BoldItalic.svg#FuturaBT-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
