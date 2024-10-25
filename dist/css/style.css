@@ -3194,8 +3194,8 @@ Start makingOrder
   max-width: 1090px;
   width: 100%;
   margin: 0 auto;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .total__item {
@@ -3210,7 +3210,7 @@ Start makingOrder
 }
 
 .total__price b {
-  font: normal bold 30px 'Futura Md BT', sans-serif;
+  font: normal bold 30px 'Futura Bk BT', sans-serif;
   color: #FFFFFF;
 }
 
@@ -5409,7 +5409,7 @@ Start 14,02,2023
   text-align: center;
   color: rgba(0,0,0, .4);
   padding-top: 5px;
-  font: italic normal 25px 'FuturaBookC', sans-serif;
+  font: normal normal 25px 'FuturaBookC', sans-serif;
 }
 
 .fancybox-button svg {
@@ -5531,12 +5531,16 @@ Start 14,02,2023
 
 .popupRegisterFormCheckbox .checkmark:before {
   content: "";
-  background: url('../images/icon8.svg') no-repeat center;
+  display: block;
   width: 16px;
   height: 12px;
-  display: block;
 }
 
+.popupRegisterFormCheckbox input:checked ~ .checkmark:before {
+  background: url('../images/icon8.svg') no-repeat center;
+}
+
+.popupRegisterFormCheckboxMain .blockCheckbox a,
 .popupRegisterFormCheckbox .blockCheckbox a {
   color: #000;
   font-size: 20px;
@@ -5597,7 +5601,215 @@ Start 14,02,2023
 .total__text {
   color: #FFFFFF;
   font: normal normal 18px 'FuturaBookC', sans-serif;
+  text-align: right;
 }
+
+.totalForm {
+  max-width: 410px;
+  width: 100%;
+}
+
+.totalForm input {
+  max-width: 410px;
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  display: block;
+  border-radius: 13px;
+  padding-left: 30px;
+  font: normal bold 22px 'FuturaBookC', sans-serif;
+  color: #ABABAB;
+}
+
+.totalForm input[type="text"]::-moz-placeholder {
+  font: normal normal 22px 'FuturaBookC', sans-serif;
+  color: #ABABAB;
+}
+
+.totalForm input[type="text"]::-webkit-input-placeholder {
+  font: normal normal 22px 'FuturaBookC', sans-serif;
+  color: #ABABAB;
+}
+
+.totalForm input[type="text"]:-ms-input-placeholder {
+  font: normal normal 22px 'FuturaBookC', sans-serif;
+  color: #ABABAB;
+}
+
+.bonusNum {
+  background: url('../images/bg2.png') no-repeat top center;
+  height: 180px;
+  background-size: cover;
+}
+
+.bonusNumForm {
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.bonusNumForm input {
+  max-width: 410px;
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF;
+  padding-left: 30px;
+  border: 1px solid #DACEC3;
+  border-radius: 13px;
+  color: #ABABAB;
+  font-size: 22px;
+}
+
+.bonusNumForm__text a,
+.bonusNumForm__text {
+  color: #FFFFFF;
+  font: normal normal 22px 'FuturaBookC', sans-serif;
+  margin-top: 10px;
+}
+
+.bonusNumForm__text a {
+  border-bottom: 1px solid;
+  font-size: 18px;
+}
+
+.popupRegisterForm__text {
+  color: rgba(0, 0, 0, .4);
+  font: normal normal 20px 'FuturaBookC', sans-serif;
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+
+.popupRegisterFormCode {
+  max-width: 390px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.code-input {
+  width: 65px;
+  height: 58px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-right: none;
+  color: #000;
+  font: italic bold 25px 'Futura Bk BT', sans-serif;
+}
+
+.code-input.active {
+  border: 1px solid #DACEC3;
+  color: #DACEC3;
+  font: italic bold 25px 'Futura Bk BT', sans-serif;
+}
+
+.code-input:first-of-type {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.code-input:last-of-type {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid #000000;
+}
+
+#input1.active {
+  position: relative;
+  left: 1px;
+}
+
+#input2.active {
+  position: relative;
+  left: 1px;
+}
+
+#input3.active {
+  position: relative;
+  left: 1px;
+}
+
+#input4.active {
+  position: relative;
+  left: 1px;
+}
+
+#input5.active {
+  position: relative;
+  left: 1px;
+}
+
+#input6.active {
+  border-right: 1px solid #DACEC3;
+}
+
+.popupRegisterForm__number {
+  color: rgba(0, 0, 0, .4);
+  font: normal normal 15px 'FuturaBookC', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.popupRegisterFormCode.mistake input {
+  border: 1px solid #FF0000;
+  border-right: none;
+  color: #FF0000;
+}
+
+.popupRegisterFormCode.mistake .code-input:last-of-type {
+  border-right: 1px solid #FF0000;
+}
+
+.popupRegisterForm__numberMistake {
+  color: #FF0000;
+  font: normal normal 15px 'FuturaBookC', sans-serif;
+  padding-top: 10px;
+}
+
+.popupRegisterFormTime {
+  margin-top: 50px;
+}
+
+.popupRegisterFormTime__text {
+  text-align: center;
+  color: rgba(0, 0, 0, .4);
+  font: normal normal 25px 'FuturaBookC', sans-serif;
+}
+
+.popupRegisterFormTime .timer {
+  text-align: center;
+  color: #000;
+  font: italic bold 25px 'Futura Md BT', sans-serif;
+  margin-top: 10px;
+}
+
+.popupRegisterForm__number_modif {
+  margin-bottom: 30px;
+}
+
+.popupRegisterForm__phone {
+  max-width: 100%;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background: #DACEC3;
+  color: #FFFFFF;
+  font: normal normal 25px 'FuturaBookC', sans-serif;
+  margin-top: 50px;
+}
+
+.popupRegisterForm__phone:before {
+  content: "";
+  display: block;
+  background: url('../images/icon10.png') no-repeat center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: -15px;
+}
+
 
 /*##############
 Start responsive
@@ -5658,6 +5870,10 @@ Start responsive
   .conditionsIn {
     max-width: 85%;
     background-position: 30px -23px;
+  }
+
+  .bonusNumForm {
+    max-width: 90%;
   }
 
   .slider-for {
@@ -6354,6 +6570,23 @@ Start responsive
 }
 
 @media (max-width: 1025px) {
+  .bonusNum {
+    height: 120px;
+  }
+
+  .bonusNumForm {
+    padding-top: 25px;
+  }
+
+  .bonusNumForm__text a, .bonusNumForm__text {
+    font-size: 20px;
+  }
+
+  .totalForm input,
+  .bonusNumForm input {
+    height: 45px;
+  }
+
   .conditionsBlockLeft {
     max-width: 370px;
     margin-top: -70px;
@@ -8123,6 +8356,12 @@ Start responsive
 }
 
 @media (max-width: 768px) {
+  .totalForm,
+  .totalForm input,
+  .bonusNumForm input {
+    max-width: 300px;
+  }
+
   .conditionsIn {
     border: none;
     background: none;
@@ -9030,6 +9269,43 @@ Start responsive
 }
 
 @media (max-width: 560px) {
+  .totalIn {
+    flex-direction: column;
+  }
+
+  .popupRegisterFormCheckboxMain .blockCheckbox a, .popupRegisterFormCheckbox .blockCheckbox a {
+    font-size: 15px;
+  }
+
+  .popupRegister {
+    padding: 20px !important;
+  }
+
+  .popupRegisterForm__phone {
+    font-size: 20px;
+  }
+
+  .popupRegisterForm__phone:before {
+    left: -5px;
+  }
+
+  .totalForm, .totalForm input, .bonusNumForm input {
+    max-width: 100%;
+  }
+
+  .totalRight {
+    margin-top: 20px;
+  }
+
+  .total__text {
+    font-size: 20px;
+  }
+
+  .total__price b, .total__price {
+    text-align: right;
+    font-size: 30px;
+  }
+
   .conditionsBlockList {
     max-width: 95%;
   }
@@ -9489,11 +9765,6 @@ Start responsive
 
   .basketBlockOrder .basketRight__title {
     font-size: 15px;
-  }
-
-  .total__price b,
-  .total__price {
-    font-size: 20px;
   }
 
   .total__item {

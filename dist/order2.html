@@ -46,6 +46,14 @@
         <ul class="social flex">
             <li>
                 <a href="">
+                    <img src="images/icon3.svg" alt="">
+                    <span class="social__text"> Бонусы </span>
+                    <span class="social__num bonus">9999</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
                     <img src="images/heart3.svg" alt="">
 
                     <span class="social__text"> Избранное </span>
@@ -420,13 +428,28 @@
         </div>
 
 
+        <div class="bonusNum wow fadeIn" data-wow-offset="300" data-wow-duration="1s">
+            <div class="bonusNumForm">
+                <input placeholder="" required type="text" id="bonusInput">
+
+                <div class="bonusNumForm__text">
+                    Вы можете списать <a href="#" id="bonusLink">250</a> бонусов
+                </div>
+            </div>
+        </div>
 
         <div class="total wow fadeIn" data-wow-offset="300" data-wow-duration="1s">
             <div class="totalIn flex">
-                <div class="total__text">Товаров на: 18 900 ₽</div>
-                <div class="total__text">Спишется бонусов: 890</div>
+                <div class="totalForm">
+                    <input placeholder="Введите промокод" required type="text">
+                </div>
 
-                <div class="total__price">Итого: <b>18 900 ₽</b></div>
+                <div class="totalRight">
+                    <div class="total__text">Товаров на: 18 900 ₽</div>
+                    <div class="total__text">Спишется бонусов: 890</div>
+
+                    <div class="total__price">Итого: <b>18 900 ₽</b></div>
+                </div>
             </div>
         </div>
 

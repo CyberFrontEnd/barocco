@@ -16,6 +16,26 @@
 <body>
 
 
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegisterBlock"><span>Вход / регистрация main</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegisterBlock">
+    <h3 class="popupRegister__title">Вход / регистрация</h3>
+
+    <form action="" class="popupRegisterForm">
+        <a href="#" class="popupRegisterForm__phone flex">Войти по номеру телефона</a>
+
+        <div class="popupRegisterFormCheckboxMain">
+            <label class="blockCheckbox">Согласен(-на) с условиями политики обработки <a href="">персональных данных.</a>
+                <input type="checkbox" checked="checked" name="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </form>
+</div>
+
+<br> <br>
+
+
 <a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister"><span>Вход / регистрация</span></a>
 
 <div class="popupRegister" style="display: none;" id="popupRegister">
@@ -115,7 +135,8 @@
 
 <br><br>
 
-<!-- Восстановление пароля -->
+
+<!-- Восстановление пароля-->
 <a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister3"><span>Восстановление пароля</span></a>
 
 <div class="popupRegister" style="display: none;" id="popupRegister3">
@@ -145,6 +166,7 @@
 </div>
 
 <br><br>
+
 
 <!-- Восстановление пароля c ошибкой-->
 <a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister4"><span>Восстановление пароля c ошибкой</span></a>
@@ -181,6 +203,8 @@
 
 <br><br>
 
+
+
 <!-- Восстановление пароля 3-->
 <a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister5"><span>Восстановление пароля 3</span></a>
 
@@ -194,13 +218,192 @@
     </div>
 </div>
 
+<br><br>
+
+
+<!--Вход / регистрация по телефону-->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister6"><span>Вход / регистрация по телефону</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister6">
+    <h3 class="popupRegister__title">Вход / регистрация</h3>
+    <div class="popupRegister__text">Введите свой телефон</div>
+
+    <form action="" class="popupRegisterForm">
+        <div class="popupRegisterForm__imput">
+            <input placeholder="Номер телефона" required type="text" id="phoneMask">
+
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20"/>
+                <path d="M18.0114 21.9797C18.8581 22.8255 20.5673 24.4334 21.7344 24.7188C22.9015 25.0041 23.7593 24.3506 24.6797 23.572C25.1583 23.1615 25.3728 22.6875 26.5343 22.4776C27.7373 22.2604 31.1308 24.5144 31.9444 25.479C34.4176 28.4123 32.1994 31.6971 28.8574 31.9778C24.722 32.3239 19.2107 28.5604 15.3275 24.6727C11.4443 20.785 7.67526 15.2729 8.02225 11.1431C8.29837 7.80026 11.587 5.58213 14.5203 8.05613C15.4849 8.86975 17.7417 12.2623 17.5226 13.4661C17.3128 14.6277 16.8379 14.8412 16.4274 15.3198C15.6459 16.2319 14.9943 17.0943 15.2805 18.265C15.5668 19.4358 17.1609 21.1357 18.0114 21.9797Z" fill="white"/>
+            </svg>
+        </div>
+
+
+        <a href="#" class="popupRegisterForm__submit flex">Войти</a>
+
+
+        <div class="popupRegisterFormCheckbox">
+            <label class="blockCheckbox">Согласен(-на) с условиями политики обработки <a href="">персональных данных.</a>
+                <input type="checkbox" checked="checked" name="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="popupRegisterForm__text">Уже регистрировались?</div>
+        <a href="#" class="popupRegisterForm__num">
+            <span>Войти по почте</span>
+        </a>
+    </form>
+</div>
+
+<br><br>
+
+<!--Вход / регистрация по телефону ошибка-->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister7"><span>Вход / регистрация по телефону ошибка</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister7">
+    <h3 class="popupRegister__title">Вход / регистрация</h3>
+    <div class="popupRegister__text">Введите свой телефон</div>
+
+    <form action="" class="popupRegisterForm">
+        <div class="popupRegisterForm__imput mistake">
+            <input placeholder="Номер телефона" required type="text" id="phoneMask2">
+
+
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20"/>
+                <path d="M18.0114 21.9797C18.8581 22.8255 20.5673 24.4334 21.7344 24.7188C22.9015 25.0041 23.7593 24.3506 24.6797 23.572C25.1583 23.1615 25.3728 22.6875 26.5343 22.4776C27.7373 22.2604 31.1308 24.5144 31.9444 25.479C34.4176 28.4123 32.1994 31.6971 28.8574 31.9778C24.722 32.3239 19.2107 28.5604 15.3275 24.6727C11.4443 20.785 7.67526 15.2729 8.02225 11.1431C8.29837 7.80026 11.587 5.58213 14.5203 8.05613C15.4849 8.86975 17.7417 12.2623 17.5226 13.4661C17.3128 14.6277 16.8379 14.8412 16.4274 15.3198C15.6459 16.2319 14.9943 17.0943 15.2805 18.265C15.5668 19.4358 17.1609 21.1357 18.0114 21.9797Z" fill="white"/>
+            </svg>
+        </div>
+
+        <div class="popupRegisterForm__mistake">Неверный номер телефона</div>
+
+        <a href="#" class="popupRegisterForm__submit flex">Войти</a>
+
+
+        <div class="popupRegisterFormCheckbox">
+            <label class="blockCheckbox">Согласен(-на) с условиями политики обработки <a href="">персональных данных.</a>
+                <input type="checkbox" checked="checked" name="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="popupRegisterForm__text">Уже регистрировались?</div>
+        <a href="#" class="popupRegisterForm__num">
+            <span>Войти по почте</span>
+        </a>
+    </form>
+</div>
+
+<br><br>
+
+
+<!--Вход / Введите код из SMS-->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister8"><span>Введите код из SMS</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister8">
+    <h3 class="popupRegister__title">Вход / регистрация</h3>
+    <div class="popupRegister__text">Введите код из SMS</div>
+
+    <form action="" class="popupRegisterForm">
+        <div class="popupRegisterFormCode flex">
+            <input type="text" maxlength="1" class="code-input" id="input1" />
+            <input type="text" maxlength="1" class="code-input" id="input2" />
+            <input type="text" maxlength="1" class="code-input" id="input3" />
+            <input type="text" maxlength="1" class="code-input" id="input4" />
+            <input type="text" maxlength="1" class="code-input" id="input5" />
+            <input type="text" maxlength="1" class="code-input" id="input6" />
+        </div>
+
+
+        <div class="popupRegisterForm__number">Отправили его на номер +7 (966) 363-32-23</div>
+
+
+        <div class="popupRegisterFormCheckbox">
+            <label class="blockCheckbox">Согласен(-на) с условиями политики обработки <a href="">персональных данных.</a>
+                <input type="checkbox" name="checkbox6">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </form>
+</div>
+<br><br>
+
+
+<!-- Код не подошёл-->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister9"><span>Код не подошёл</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister9">
+    <h3 class="popupRegister__title">Вход / регистрация</h3>
+    <div class="popupRegister__text">Введите код из SMS</div>
+
+    <form action="" class="popupRegisterForm">
+        <div class="popupRegisterFormCode flex mistake">
+            <input type="text" maxlength="1" class="code-input" id="input7" />
+            <input type="text" maxlength="1" class="code-input" id="input8" />
+            <input type="text" maxlength="1" class="code-input" id="input9" />
+            <input type="text" maxlength="1" class="code-input" id="input10" />
+            <input type="text" maxlength="1" class="code-input" id="input11" />
+            <input type="text" maxlength="1" class="code-input" id="input12" />
+        </div>
+
+
+        <div class="popupRegisterForm__numberMistake">Код не подошёл</div>
+
+
+        <div class="popupRegisterFormTime">
+            <div class="popupRegisterFormTime__text">Получить новый код можно через</div>
+            <div class="timer" id="countdown">02:00</div>
+        </div>
+    </form>
+</div>
+
+<br><br>
+
+
+<!-- Код не подошёл-->
+<a class="cell-btn" href="#" data-fancybox="" data-src="#popupRegister10"><span>Получить новый код</span></a>
+
+<div class="popupRegister" style="display: none;" id="popupRegister10">
+    <h3 class="popupRegister__title">Вход / регистрация</h3>
+    <div class="popupRegister__text">Введите код из SMS</div>
+
+    <form action="" class="popupRegisterForm">
+        <div class="popupRegisterFormCode flex">
+            <input type="text" maxlength="1" class="code-input" id="input13" />
+            <input type="text" maxlength="1" class="code-input" id="input14" />
+            <input type="text" maxlength="1" class="code-input" id="input15" />
+            <input type="text" maxlength="1" class="code-input" id="input16" />
+            <input type="text" maxlength="1" class="code-input" id="input17" />
+            <input type="text" maxlength="1" class="code-input" id="input18" />
+        </div>
+
+        <div class="popupRegisterForm__number popupRegisterForm__number_modif">Отправили его на номер +7 (966) 363-32-23</div>
+
+        <a href="#" class="popupRegisterForm__submit flex">Получить новый код</a>
+    </form>
+</div>
+
+
+
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/fancybox.js"></script>
+<script src="https://unpkg.com/imask"></script>
 <script src="js/script.js"></script>
 <script>
-  $('[data-fancybox]').fancybox({
-    autoFocus: false,
+  $(document).ready(function () {
+    IMask($('#phoneMask')[0], {
+      mask: '+{7}(000)000-00-00',
+      lazy: false,
+    });
+
+    IMask($('#phoneMask2')[0], {
+      mask: '+{7}(000)000-00-00',
+      lazy: false,
+    });
   });
+
 </script>
 </body>
 </html>
